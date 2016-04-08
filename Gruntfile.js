@@ -73,7 +73,7 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('default', ['connect', 'watch']);
 	//grunt.registerTask('default', ['myth', 'connect']);
-	grunt.registerTask('compile', ['myth', 'couch-compile']);
+	grunt.registerTask('compile', ['couch-compile']);
 	grunt.registerTask('deploy', ['couch-compile', 'couch-push']);
 
 };
