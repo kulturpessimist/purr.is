@@ -27,7 +27,21 @@ video#background{
 	left: 0px; right: 0px;
 	object-fit: none;
 }
+div#fallback{
+	width: 100vw; height: 100vh;
+	position: absolute;
+	top: 0px; bottom: 0px;
+	left: 0px; right: 0px;
+
+	background-image: url('../img/rgba.png');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	display: none;
+}
+
 div#cutout{
+	width: 100vw; height: 100vh;
 	position: absolute;
 	top: 0px; bottom: 0px;
 	left: 0px; right: 0px;
@@ -36,7 +50,6 @@ div#cutout{
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
-	
 }
 
 footer{
@@ -56,4 +69,15 @@ h1{
 	font-size: 6rem;
 	font-weight: bold;
 	color: #eee;
+}
+
+
+@media (max-width:690px) {
+	/* smartphones, Android phones, landscape iPhone */
+	video{
+		display: none;
+	}
+	div#fallback{
+		display: block;
+	}
 }
