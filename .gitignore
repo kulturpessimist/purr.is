@@ -2,3 +2,5 @@
 node_modules
 build
 _Material
+src/_attachments/bower_components
+src/_attachments/resources

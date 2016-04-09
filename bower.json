@@ -1,0 +1,24 @@
+{
+  "name": "website-purr-is",
+  "description": "purr.is website",
+  "main": "",
+  "authors": [
+    "Alex Schedler <con.sume.org@gmail.com>"
+  ],
+  "license": "CC",
+  "homepage": "https://PURR.is",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/_attachments/js/bower/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "riot": "^2.3.18",
+    "fetch": "^0.11.0",
+    "milligram": "^1.1.0"
+  }
+}

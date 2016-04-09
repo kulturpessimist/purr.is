@@ -1,12 +1,4 @@
-@import url("../font/Mairy Family/Mairy Light/Mairy-Light.css");
-/*
- * */
 ::selection {
-	background-color: #50E3C2;
-	color: #eeeeee;
-}
-
-::-moz-selection {
 	background-color: #50E3C2;
 	color: #eeeeee;
 }
