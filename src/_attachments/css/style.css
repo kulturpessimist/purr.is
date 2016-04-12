@@ -1,5 +1,19 @@
+/*!
+	  ______   __  __     ______     ______
+	 /\  == \ /\ \/\ \   /\  == \   /\  == \
+	 \ \  _-/ \ \ \_\ \  \ \  __<   \ \  __<
+	  \ \_\    \ \_____\  \ \_\ \_\  \ \_\ \_\
+	   \/_/     \/_____/   \/_/ /_/   \/_/ /_/
+ 
+*/
+:root {
+	--purr-white: #EEEEEE;
+	--purr-gray: #4A4A4A;
+	--purr-turquoise: #50E3C2;
+}
+
 ::selection {
-	background-color: #50E3C2;
+	background-color: var( --purr-turquoise );
 	color: #eeeeee;
 }
 
@@ -7,9 +21,25 @@ body{
 	margin: 0; padding:0;
 	height: 100vh;
 	width: 100vw;
-	background-color: #4a4a4a;
+	background-color: var( --purr-gray );
 
 	font-family: "MairyLight";
+	
+	overflow-x: auto;
+	overflow-y: auto;
+	scroll-snap-type: mandatory;
+	scroll-snap-points-y: 100vh;
+}
+h1{
+	width: 400px;
+	font-size: 6rem;
+	font-weight: bold;
+	color: #eee;
+}
+
+backdrop{
+	display: block;
+	width: 100vw; height: 100vh;
 }
 
 video#background{
@@ -17,6 +47,8 @@ video#background{
 	position: absolute;
 	top: 0px; bottom: 0px;
 	left: 0px; right: 0px;
+
+	z-index: -999;
 	object-fit: none;
 }
 div#fallback{
@@ -30,22 +62,26 @@ div#fallback{
 	background-position: center center;
 	background-repeat: no-repeat;
 	display: none;
+	z-index: 1;
 }
-
-div#cutout{
+section#home{
 	width: 100vw; height: 100vh;
 	position: absolute;
 	top: 0px; bottom: 0px;
 	left: 0px; right: 0px;
-
+	
 	background-image: url('../img/PURR-cutout.png');
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
+	z-index: 2;
 }
 
+
+
+
 footer{
-	position: absolute;
+	position: fixed;
 	bottom: 10px;
 	left: 20px; right: 20px;
 
@@ -55,17 +91,47 @@ footer{
 	margin-left: 20px;
 	margin-right: 20px;
 }
+/*
+ * Sections
+ * */
+section#about{
+	background-color: var( --purr-gray );
+	width: 100vw;
+	height: 100vh;
 
-h1{
-	width: 400px;
-	font-size: 6rem;
-	font-weight: bold;
-	color: #eee;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+
+	color: var( --purr-white );;
+}
+section#about p{
+	width: 66%;
+	
+	justify-content: center;
+
+
+	font-family: 'MairyExtBd';
+	font-style: italic;
+	font-size: calc(1.6rem + 5vh);
+	line-height: calc(1.6rem + 5vh);
+}
+section#about a,
+section#about a:link,
+section#about a:visited{
+	color: var( --purr-turquoise );
+	text-decoration: none;
+}
+section#about a:hover,
+section#about a:active{
+	text-decoration: underline;
+	text-decoration-skip: ink;
 }
 
-
+/*
+ * Mobile ...
+ * */
 @media (max-width:690px) {
-	/* smartphones, Android phones, landscape iPhone */
 	video{
 		display: none;
 	}

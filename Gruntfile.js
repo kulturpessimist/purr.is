@@ -9,9 +9,9 @@ module.exports = function(grunt) {
 		},
 		jitGrunt: {
 			staticMappings: {
-				'couch-compile': 'grunt-couch',
-				'couch-push': 'grunt-couch',
-				'clean-couch-compile': 'grunt/custom-tasks/clean-couch-compile.js'
+				'couch-compile': 		'grunt-couch',
+				'couch-push': 			'grunt-couch',
+				'clean-couch-compile': 	'grunt/custom-tasks/clean-couch-compile.js'
 			}
 		}
 	});

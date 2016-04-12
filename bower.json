@@ -19,6 +19,7 @@
   "dependencies": {
     "riot": "^2.3.18",
     "fetch": "^0.11.0",
-    "milligram": "^1.1.0"
+    "milligram": "^1.1.0",
+    "scrollsnap-polyfill": "ckrack/scrollsnap-polyfill#^0.1.0"
   }
 }

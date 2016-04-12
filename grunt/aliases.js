@@ -1,11 +1,12 @@
 module.exports = {
 	'default': [
+		'preflight',
 		'connect',
 		'watch'
 	],
   	'preflight': [
 		'concat:css',
-		'myth',
+		'postcss',
 		'riot',
 		'concat:js',
 		'uglify'
