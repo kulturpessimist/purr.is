@@ -6,7 +6,7 @@ purr = {
 	_currentSegment:0,
 	//
 	mount: function(){
-		riot.mount('backdrop');
+		riot.mount('home');
 		riot.mount('menu');
 		riot.mount('about');
 		riot.mount('contact');
@@ -24,7 +24,7 @@ purr = {
 			var location = purr._sectionMap[segment];
 			riot.route(location, null, true)
 			document.querySelectorAll('footer i span')[0].innerHTML = '#'+location;
-			document.body.className = location;
+			document.body.className = 'section--'+location;
 			purr._currentSegment = segment;
 		}
 	},

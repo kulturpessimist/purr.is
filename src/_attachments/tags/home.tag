@@ -1,4 +1,4 @@
-<backdrop>
+<home>
 
 	<video autoplay loop muted id="background"
 		src="video/PURR-ink.min.mp4"></video>
@@ -7,4 +7,4 @@
 
 	<section id="home"></section>
 
-</backdrop>
+</home>

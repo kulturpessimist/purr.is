@@ -10,7 +10,7 @@
 			<a href="#">technology consulting</a> from Munich, Germany.
 			<br/><br/>
 			Our most recent project is
-			<a href="#" class="label non-tech">to establish our company</a>
+			<a href="#" class="label about" data-label="non tech">to establish our company</a>
 		</p>
 				
 	</section>
