@@ -1,5 +1,5 @@
 <about>
-	
+		
 	<section id="about">
 		
 		<p>
@@ -10,10 +10,9 @@
 			<a href="#">technology consulting</a> from Munich, Germany.
 			<br/><br/>
 			Our most recent project is
-			<a href="#">$PROJECT_NAME</a>
-			, a $PROJECT_DESCRIPTION.
+			<a href="#" class="label non-tech">to establish our company</a>
 		</p>
-		
+				
 	</section>
-	
+		
 </about>
