@@ -18,12 +18,13 @@
 	--purr-blue-dark: #1A5775;
 	--purr-red-dark: #962635;
 }
-
+/*
+ * General Stuff
+ * */
 ::selection {
 	background-color: var( --purr-turquoise );
 	color: #eeeeee;
 }
-
 body{
 	margin: 0; padding:0;
 	height: 100vh;
@@ -45,15 +46,26 @@ h1{
 	font-weight: bold;
 	color: #eee;
 }
+.label:after{
+	display: inline-block;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	white-space: nowrap;
+	vertical-align: baseline;
 
+	text-transform: uppercase;
 
+	font-size: 1.5rem;
+	line-height: 1.5rem;
 
+	padding: 4px 4px 0px 4px;
+	border-radius: 4px;
+
+	position: relative;
+	top: calc( -0.5 * (1.6rem + 5vh) )
+}
 /*
- *
- *
- *
+ * Navigation
  * */
-
 menu{
 	display: block;
 	margin: 0px;
@@ -88,11 +100,6 @@ menu nav a{
 	font-family: 'MairyExtBd';
 	font-style: italic;
 }
-/*
- *
- *
- * */
-/* Nav Trigger */
 #navigation {
 	position: absolute;
 	clip: rect(0, 0, 0, 0);
@@ -126,32 +133,6 @@ label[for="navigation"] {
  *
  *
  * */
-
-.label:after{
-	display: inline-block;
-	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-	white-space: nowrap;
-	vertical-align: baseline;
-
-	text-transform: uppercase;
-
-	font-size: 1.5rem;
-	line-height: 1.5rem;
-
-	padding: 4px 4px 0px 4px;
-	border-radius: 4px;
-
-	position: relative;
-	top: calc( -0.5 * (1.6rem + 5vh) )
-}
-
-.label.non-tech:after{
-	content:"non Tech";
-
-  	color: var( --purr-white );
-	background-color: var( --purr-red-dark );;
-}
-
 footer{
 	position: fixed;
 	bottom: 10px;
@@ -173,6 +154,9 @@ footer .next{
 }
 footer .next img{
 	width: 140px;
+}
+body.contact footer .next{
+	display: none;
 }
 /*
  * Sections
@@ -248,6 +232,12 @@ section#about a:active{
 	text-decoration: underline;
 	text-decoration-skip: ink;
 }
+.label.non-tech:after{
+	content:"non Tech";
+
+  	color: var( --purr-white );
+	background-color: var( --purr-red-dark );;
+}
 
 section#contact{
 	background-color: var( --purr-turquoise );
@@ -261,7 +251,16 @@ section#contact{
 	color: var( --purr-white );
 }
 
-
+.card{
+	min-height: 66vh;
+	min-width: 50vw;
+	background-color: var(--purr-white);
+	border-radius: 16px;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.8);
+}
+.narrow{
+	min-width: 33vw;
+}
 /*
  * Mobile ...
  * */

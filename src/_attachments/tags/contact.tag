@@ -1,3 +1,11 @@
 <contact>
-	<section id="contact"></section>
+	
+	<section id="contact">
+		
+		<div class="card narrow">
+			
+		</div>
+		
+	</section>
+
 </contact>

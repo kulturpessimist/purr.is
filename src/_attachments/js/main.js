@@ -24,6 +24,7 @@ purr = {
 			var location = purr._sectionMap[segment];
 			riot.route(location, null, true)
 			document.querySelectorAll('footer i span')[0].innerHTML = '#'+location;
+			document.body.className = location;
 			purr._currentSegment = segment;
 		}
 	},
