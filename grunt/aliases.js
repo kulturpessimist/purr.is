@@ -16,8 +16,12 @@ module.exports = {
   		'couch-compile',
   		'clean-couch-compile'
   	],
-  	'deploy': [
+  	'deploy:staging': [
   		'compile',
-  		'couch-push'
+  		'couch-push:staging'
+  	],
+  	'deploy:production': [
+  		'compile',
+  		'couch-push:production'
   	]
 };

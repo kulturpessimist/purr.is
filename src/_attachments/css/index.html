@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="theme-color" content="#4a4a4a">
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title>PURR.is/cards</title>
+	<style>
+		:root {
+			--purr-white: #EEEEEE;
+			--purr-gray: #4A4A4A;
+		
+			--purr-turquoise: #50E3C2;
+			--purr-blue: #039BE5;
+			--purr-red: #FC4058;
+		
+			--purr-turquoise-dark: #3BCFAE;
+			--purr-blue-dark: #1A5775;
+			--purr-red-dark: #962635;
+		}
+
+		body{
+			background-color: #4a4a4a;
+			width: 100vw;
+			height: 100vh;
+		
+		 	display: flex;
+		 	align-items: center;
+		 	justify-content: center;
+ 		}
+ 		
+ 		.card{
+	 		position: absolute;
+	 		left: calc(50vw/2);
+	 		top: calc(66vh/2)
+ 		}
+ 		.active{
+	 		z-index: 99;
+ 		}
+	</style>
+	<link rel="stylesheet" href="cards.css">
+
+</head>
+<body>
+
+		<div class="card  chat active">
+			<p class="other">
+				Good evening!
+			</p>
+			<p class="other">
+				Do you have some interesting projects where we can help you? Or do you just want to say hello or come over for a beer? Just use our lovely contact form below...
+			</p>
+			<form action="" method="post">
+				<p class="self">
+					Hello PURR!<br/>
+					I am <input type="text" value="" placeholder="name" autofocus="autofocus"> and I want to talk about
+					<input type="text" value="" placeholder="subject"> with you. I am from the company
+					<input type="text" value="" placeholder="company"> and you can reach me at
+					<input type="text" value="" placeholder="email or phone">.
+				</p>
+			</form>
+			
+			<div class="footer">
+				<a href="#send">Send</a>
+			</div>
+		</div>
+		
+		<div class="card  chat">
+			ok
+		</div>
+
+		<div class="card  chat">
+			ok
+		</div>
+
+
+</body>
+</html>

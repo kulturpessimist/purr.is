@@ -1,0 +1,106 @@
+/*
+ * PURR Cards
+ * */
+
+.card{
+	width: 900px;
+	height: 500px;
+	
+	background-color: var(--purr-white);
+	border-radius: 16px;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.8);
+
+	font-size: 2rem;
+
+	display: flex;
+	flex-direction: row;
+	
+}
+
+.card .left{
+	border-radius: 16px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+.card .right{
+	border-radius: 16px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+
+	.narrow{
+		min-width: 33vw;
+		max-width: 40vw;
+	}
+.card .footer{
+	margin-top: auto;
+	background-color: #eee;
+	border-radius: 16px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	text-align: center;
+	border-color: var(--purr-gray);
+	border-top: 1px solid;
+
+	padding: 6px;
+	line-height: 4rem;
+}
+.card .footer a {
+	display: block;
+}
+
+.chat{
+	overflow-x: scroll;
+
+}
+.chat p{
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+
+	display: inline-block;
+	border-color: var(--purr-gray);
+	border: 1px solid;
+	padding: 15px 30px 10px 30px;
+	/*padding: top right bottom left;*/
+
+	border-radius: 32px;
+	
+	font-size: 2rem;
+}
+
+.chat p.other:first-child,
+.chat p.self:first-child{
+	margin-top: 30px;
+}
+.chat p:last-child{
+	margin-bottom: 30px;
+}
+.chat p.other{
+	float: left;
+	border-top-left-radius: 0px;
+}
+.chat p.self{
+	float: right;
+	border-bottom-right-radius: 0px;
+	border-color: var(--purr-gray);
+	background-color: var( --purr-gray );
+	color: var( --purr-white );
+}
+
+.chat p.action{
+	border-color: var(--purr-turquoise);
+	background-color: var( --purr-turquoise );
+	color: var( --purr-white );
+}
+.chat p.action:hover{
+	background-color: var( --purr-turquoise-dark );
+}
+.chat p.action a,
+.chat p.action a:active,
+.chat p.action a:hover,
+.chat p.action a:visited{
+	color: var( --purr-white );
+	text-decoration: none;
+}

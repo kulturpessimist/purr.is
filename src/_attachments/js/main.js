@@ -6,11 +6,7 @@ purr = {
 	_currentSegment:0,
 	//
 	mount: function(){
-		riot.mount('home');
-		riot.mount('menu');
-		riot.mount('about');
-		riot.mount('contact');
-		
+		riot.mount('*');		
 		riot.route('next', function(name){
 			var nextSegment = purr._sectionMap[++purr._currentSegment] || 'home';
 			zenscroll.to( document.getElementById(nextSegment) );

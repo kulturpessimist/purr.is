@@ -1,0 +1,106 @@
+/*
+ * Navigation
+ * */
+navigation nav{
+	display: block;
+	margin: 0px;
+	padding: 0px;
+
+	background-color: var(--purr-turquoise);
+
+	width: 350px;
+	height: 100vh;
+
+	position: fixed;
+	top: 0px;
+	left: -350px;
+
+	clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+
+	transition: all 0.5s;
+
+	z-index: 10;
+}
+navigation nav ul{
+	position: absolute;
+	bottom: 0px;
+	left: 50px;
+
+	list-style-type: none;
+}
+navigation nav a{
+
+	color: var(--purr-turquoise-dark);
+
+	font-size: 6rem;
+	font-family: 'MairyExtBd';
+	font-style: italic;
+}
+#navigation {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+label[for="navigation"] {
+  	position: fixed;
+  	left: 50px; top: 50px;
+	z-index: 11;
+  	width: 161px; height: 96px;
+  	cursor: pointer;
+  	background-image: url("../img/PURR-lighter.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+body.section--contact label[for="navigation"]{
+	background-image: url("../img/PURR-darker.png");
+}
+#navigation:checked + label:after {
+  	content: attr(data-close);
+  	display: block;
+  	position: relative;
+  	top: 100px;
+  	width: 161px;
+  	text-align: center;
+  	color: var(--purr-turquoise-dark);
+	font-family: 'MairyExtBd';
+	font-style: italic;
+}
+#navigation:checked + label[for="navigation"]{
+	background-image: url("../img/PURR-darker.png");
+}
+
+#navigation:checked ~ nav {
+  left: 0px;
+}
+navigation .label.nav:after{
+  	color: var( --purr-white );
+	background-color: var( --purr-turquoise-dark );;
+}
+/*
+ * Footer
+ * */
+footer{
+	position: fixed;
+	bottom: 10px;
+	left: 20px; right: 20px;
+
+	text-align: right;
+	font-family: MairyLight;
+	color: #eee;
+	margin-left: 20px;
+	margin-right: 20px;
+
+	z-index: 89;
+}
+footer .next{
+	display: block;
+	width: 100%;
+
+	text-align: center;
+}
+footer .next img{
+	width: 140px;
+}
+body.section--imprint footer .next{
+	display: none;
+}

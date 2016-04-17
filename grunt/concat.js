@@ -21,9 +21,12 @@ module.exports = {
 			separator: '',
 		},
 		src: [
-			'src/_attachments/bower_components/normalize.css/normalize.css',
+			//'src/_attachments/bower_components/normalize.css/normalize.css',
 			'src/_attachments/bower_components/milligram/dist/milligram.css',
-			'src/_attachments/css/style.css'
+			'src/_attachments/css/main.css',
+			'src/_attachments/css/navigation.css',
+			'src/_attachments/css/cards.css',
+			'src/_attachments/css/forms.css'
 		],
 		dest: 'src/_attachments/resources/PURR.css',
 	}
