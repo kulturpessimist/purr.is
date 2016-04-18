@@ -12,7 +12,7 @@
 			<form action="" method="post">
 				<p class="self">
 					Hello PURR!<br/>
-					I am <input type="text" value="" placeholder="name" autofocus="autofocus"> and I want to talk about
+					I am <input type="text" value="" placeholder="name"> and I want to talk about
 					<input type="text" value="" placeholder="subject"> with you. I am from the company
 					<input type="text" value="" placeholder="company"> and you can reach me at
 					<input type="text" value="" placeholder="email or phone">.

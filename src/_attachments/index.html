@@ -15,18 +15,50 @@
 		body.loading > div{
 			width: 100vw; height: 100vh;
 			position: absolute; top:0; left:0;
-			background-color: #4a4a4a;
+			background-color: #eee;
+			background-image: url('data:image/svg+xml;charset=UTF-8,<svg width="321" height="89" viewBox="0 0 321 89" xmlns="http://www.w3.org/2000/svg"><g fill="#4A4A4A"><path d="M112.475.075h-48.95l-63.525 88h52.525l29.975-48.95 17.875 48.95h50.875z"/><path d="M281.475.075h-48.95l-63.525 88h52.525l29.975-48.95 17.875 48.95h50.875z"/></g></svg>');
+			background-position: center center;
+			background-repeat: no-repeat;
+			z-index: 999999;
 			-webkit-transition: all 0.75s linear;
 					transition: all 0.75s linear;
-			z-index: 999999;
-			font-family: monospace; line-height:6rem;
-			font-size: 4rem; font-weight: 100; color: #eeeeee;
-			display: flex; align-items: flex-end; justify-content: center;
  		}
+ 		body.loading > div div{
+	 		width: 0vw;
+	 		height: 4px;
+	 		background-color: #50E3C2;
+	 		font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	 		font-size: 10px;
+	 		line-height: 24px;
+	 		text-indent: 4px;
+	 		color: #4a4a4a;
+	 		-webkit-animation: animation 3000ms linear infinite;
+	 		   -moz-animation: animation 3000ms linear infinite;
+	 		    -ms-animation: animation 3000ms linear infinite;
+	 		     -o-animation: animation 3000ms linear infinite;
+	 		        animation: animation 3000ms linear infinite;
+	 	}
+	 	@-webkit-keyframes animation {
+	 	  	0% { width:0vw } 	100% { width:100vw }
+	 	}
+	 	@-moz-keyframes animation {
+	 	  	0% { width:0vw }	100% { width:100vw }
+	 	}
+	 	@-o-keyframes animation {
+	 	  	0% { width:0vw }	100% { width:100vw }
+	 	}
+	 	@-ms-keyframes animation {
+	 	  	0% { width:0vw }	100% { width:100vw }
+	 	}
+	 	@keyframes animation {
+	 		0% { width:0vw }	100% { width:100vw }
+	 	}
 	</style>
 </head>
 <body class="loading">
-	<div>PURR.is/loading</div>
+	<div>
+		<div>Loading...</div>
+	</div>
 		
 	<navigation></navigation>
 	
@@ -39,18 +71,27 @@
 	<purr-footer></purr-footer>
 	
 	<script>
-		window._startTime = (new Date).getTime();
-		window.onload = function(){
-			var loadingTime = (new Date).getTime() - window._startTime;
-			console.log('Loading took', loadingTime, 'ms');
-			setTimeout(function(){
-				var loader = document.querySelector('body > div')
-				loader.style.opacity = 0;
-				setTimeout(function(){
-					document.body.className = 'section--home';
-					document.body.removeChild(this);
-				}.bind(loader), 760);
-			}, loadingTime);
+		console.time('loading');
+		document.onreadystatechange = function () {
+		  	switch (document.readyState) {
+		    	case "loading":
+		  			break;
+		    	case "interactive":
+					console.timeEnd('loading');
+					console.time('boot');
+		  			break;
+		    	case "complete":
+		  			console.timeEnd('boot');
+		  			setTimeout(function(){
+		  				var loader = document.querySelector('body > div')
+		  				loader.style.opacity = 0;
+		  				setTimeout(function(){
+		  					document.body.className = 'section--home';
+		  					document.body.removeChild(this);
+		  				}.bind(loader), 760);
+		  			}, 500);
+		  			break;
+		  	}
 		}
 	</script>
 	<script src="resources/PURR.min.js"></script>
