@@ -1,7 +1,7 @@
 /*
  * Navigation
  * */
-navigation nav{
+nav{
 	display: block;
 	margin: 0px;
 	padding: 0px;
@@ -21,14 +21,14 @@ navigation nav{
 
 	z-index: 10;
 }
-navigation nav ul{
+nav ul{
 	position: absolute;
 	bottom: 0px;
 	left: 50px;
 
 	list-style-type: none;
 }
-navigation nav a{
+nav a{
 
 	color: var(--purr-turquoise-dark);
 
@@ -72,9 +72,9 @@ body.section--contact label[for="navigation"]{
 #navigation:checked ~ nav {
   left: 0px;
 }
-navigation .label.nav:after{
+.label.nav:after{
   	color: var( --purr-white );
-	background-color: var( --purr-turquoise-dark );;
+	background-color: var( --purr-turquoise-dark );
 }
 /*
  * Footer
@@ -92,6 +92,9 @@ footer{
 
 	z-index: 89;
 }
+footer i{
+	color: var( --purr-white );
+}
 footer .next{
 	display: block;
 	width: 100%;
@@ -103,4 +106,7 @@ footer .next img{
 }
 body.section--imprint footer .next{
 	display: none;
+}
+body.section--contact footer i{
+	color: var( --purr-gray );
 }

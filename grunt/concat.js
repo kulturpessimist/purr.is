@@ -24,6 +24,7 @@ module.exports = {
 			//'src/_attachments/bower_components/normalize.css/normalize.css',
 			'src/_attachments/bower_components/milligram/dist/milligram.css',
 			'src/_attachments/css/main.css',
+			'src/_attachments/css/sections.css',
 			'src/_attachments/css/navigation.css',
 			'src/_attachments/css/cards.css',
 			'src/_attachments/css/forms.css'

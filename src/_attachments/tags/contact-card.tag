@@ -7,7 +7,7 @@
 			<div class="left" style="width:40%; background-color:#fff; padding:30px;">
 				PURR.is/<br/>
 				Schedler, Knothe & Partner<br/>
-				Indipendent Development<br/>
+				Independent Development<br/>
 				
 				Brucknerstraße 26<br/>
 				81677 München<br/><br/>

@@ -2,14 +2,21 @@
 <html lang="de">
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<meta name="theme-color" content="#4a4a4a">
-	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<title>PURR.is</title>
+	<meta name="description"				content="">
+	<meta name="keywords" 					content="">
+	<meta name="organization" 				content="PURR">
+	<meta property="og:description" 		content="" />
+	<meta property="og:locale" 				content="de_DE" />
+	<meta property="og:locale:alternate" 	content="en_EN" />
+	<meta property="og:site_name" 			content="PURR.is" />
+	<meta property="og:image" 				content="" />
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#4a4a4a">
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="font/fonts.css">
-	<link rel="stylesheet" href="resources/PURR.min.css">
 	<style>
 		.loading{ overflow: hidden; }
 		body.loading > div{
@@ -32,44 +39,111 @@
 	 		line-height: 24px;
 	 		text-indent: 4px;
 	 		color: #4a4a4a;
-	 		-webkit-animation: animation 3000ms linear infinite;
-	 		   -moz-animation: animation 3000ms linear infinite;
-	 		    -ms-animation: animation 3000ms linear infinite;
-	 		     -o-animation: animation 3000ms linear infinite;
-	 		        animation: animation 3000ms linear infinite;
+	 		-ms-animation: animation 3000ms linear infinite;
+	 		    animation: animation 3000ms linear infinite;
 	 	}
-	 	@-webkit-keyframes animation {
-	 	  	0% { width:0vw } 	100% { width:100vw }
+	 	@-ms-keyframes animation{
+	 	  	  0% { width:0vw;	background-color: #50E3C2; }
+	 	  	 33% { width:100vw;	background-color: #50E3C2; }
+	 	  	 34% { width:0vw; 	background-color: #FC4058; }
+	 	  	 66% { width:100vw;	background-color: #FC4058; }
+	 	  	 67% { width:0vw; 	background-color: #039BE5; }
+	 		100% { width:100vw;	background-color: #039BE5; }
 	 	}
-	 	@-moz-keyframes animation {
-	 	  	0% { width:0vw }	100% { width:100vw }
-	 	}
-	 	@-o-keyframes animation {
-	 	  	0% { width:0vw }	100% { width:100vw }
-	 	}
-	 	@-ms-keyframes animation {
-	 	  	0% { width:0vw }	100% { width:100vw }
-	 	}
-	 	@keyframes animation {
-	 		0% { width:0vw }	100% { width:100vw }
+	 	@keyframes animation{
+	 	  	  0% { width:0vw;	background-color: #50E3C2; }
+	 	  	 33% { width:100vw;	background-color: #50E3C2; }
+	 	  	 34% { width:0vw; 	background-color: #FC4058; }
+	 	  	 66% { width:100vw;	background-color: #FC4058; }
+	 	  	 67% { width:0vw; 	background-color: #039BE5; }
+	 		100% { width:100vw;	background-color: #039BE5; }
 	 	}
 	</style>
 </head>
 <body class="loading">
+
+<!-- purr.is/loading -->
+
 	<div>
 		<div>Loading...</div>
 	</div>
 		
-	<navigation></navigation>
+<!-- purr.is/navigation -->
 	
-	<home></home>
+	<input type="checkbox" id="navigation" />
+	<label for="navigation" data-close="close menu"></label>
 
-	<about></about>
-	
-	<contact-card></contact-card>
+	<nav>
 
-	<purr-footer></purr-footer>
+		<ul>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#work" class="label nav" data-label="soon">Work</a></li>
+		</ul>
+
+	</nav>
 	
+<!-- purr.is/home -->
+
+	
+	<section id="home">
+		<video autoplay loop muted id="background" src="video/PURR-ink.min.mp4"></video>
+		<div id="fallback"></div>
+		<div id="mask"></div>
+	</section>
+
+<!-- purr.is/about -->
+
+	<section id="about">
+		
+		<p>
+			Hi, we are PURR.
+			We are a team of developers and entrepreneurs specialized in
+			<a href="#">web application development</a>,
+			<a href="#">digital product creation</a> and
+			<a href="#">technology consulting</a> from Munich, Germany.
+			<br/><br/>
+			Our most recent project is
+			<a href="#" class="label about" data-label="non tech">to establish our company</a>
+		</p>
+				
+	</section>
+
+<!-- purr.is/contact -->
+	
+	<section id="contact">
+		<p>
+			PURR.is/<br/>
+			Schedler, Knothe & Partner<br/>
+			Independent Development<br/><br/>
+		
+			Brucknerstraße 26<br/>
+			81677 München
+		</p>
+		<div>
+			<div>
+				Vertreten durch:<br/>
+				<a href="mailto:alex@purr.is">Alexander Schedler</a><br/>
+				<a href="mailto:toby@purr.is">Tobias Knothe</a>
+			</div>
+			<div>
+				Kontakt:<br/>
+				Fon:	<a href="tel:+491714123929">+49 171 4123 929</a><br/>
+				E-Mail:	<a href="mailto:hello@purr.is">hello@purr.is</a>
+			</div>
+		</div>
+
+	</section>
+
+<!-- purr.is/footer -->
+
+	<footer>
+		<a href="#next" class="next">
+			<img src="img/arrow.png" alt="scroll down" />
+		</a>
+		<i>PURR.is/<span>#home</span></i>
+	</footer>
+		
 	<script>
 		console.time('loading');
 		document.onreadystatechange = function () {
@@ -89,11 +163,13 @@
 		  					document.body.className = 'section--home';
 		  					document.body.removeChild(this);
 		  				}.bind(loader), 760);
-		  			}, 500);
+		  			}, 1000);
 		  			break;
 		  	}
 		}
 	</script>
+	<link rel="stylesheet" href="font/fonts.css">
+	<link rel="stylesheet" href="resources/PURR.min.css">
 	<script src="resources/PURR.min.js"></script>
 </body>
 </html>
