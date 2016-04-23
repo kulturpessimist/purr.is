@@ -20,6 +20,8 @@ nav{
 	transition: all 0.5s;
 
 	z-index: 10;
+	
+	user-select: none;
 }
 nav ul{
 	position: absolute;

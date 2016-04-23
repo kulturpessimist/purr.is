@@ -10,7 +10,7 @@ video#background{
 	position: absolute;
 	top: 0px; bottom: 0px;
 	left: 0px; right: 0px;
-
+	display: none;
 	z-index: -999;
 	object-fit: none;
 }
@@ -24,7 +24,7 @@ div#fallback{
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
-	display: none;
+	display: block;
 	z-index: 19;
 }
 div#mask{
@@ -40,6 +40,14 @@ div#mask{
 	z-index: 20;
 }
 
+html.videoautoplay video#background{
+	display: block;
+}
+html.videoautoplay div#fallback{
+	display: none;
+}
+
+
 section#about{
 	background-color: var( --purr-red );
 	width: 100vw;
@@ -51,15 +59,10 @@ section#about{
 
 	color: var( --purr-white );
 }
-section#about p{
+section#about p,
+section#about h1{
 	width: 66%;
-
 	justify-content: center;
-
-	font-family: 'MairyExtBd';
-	font-style: italic;
-	font-size: calc(1.6rem + 5vh);
-	line-height: calc(1.6rem + 5vh);
 }
 section#about a,
 section#about a:link,
@@ -77,6 +80,7 @@ section#about a:active{
 	background-color: var( --purr-red-dark );;
 }
 
+
 section#contact{
 	background-color: var( --purr-turquoise );
 	width: 100vw;
@@ -90,27 +94,13 @@ section#contact{
 	color: var( --purr-gray );
 }
 section#contact p,
-section#contact div div{
+section#contact h1{
 	width: 66%;
-
 	justify-content: center;
-
-	font-family: 'MairyExtBd';
-	font-style: italic;
-	font-size: calc(1.6rem + 5vh);
-	line-height: calc(1.6rem + 5vh);
 }
-section#contact div{
-	width: 66%;
+section#contact h1{
+	font-size: 4rem;
 }
-section#contact div div{
-	width: 50%;
-	float: left;
-
-	font-size: calc(1.6rem + 3vh);
-	line-height: calc(1.6rem + 3vh);
-}
-
 section#contact a,
 section#contact a:link,
 section#contact a:visited{
@@ -126,49 +116,43 @@ section#contact a:active{
 
 
 
-
-
-
-
-
-section#imprint{
-	background-color: var( --purr-blue );
-	width: 100vw;
-	height: 100vh;
-
- 	display: flex;
- 	align-items: center;
- 	justify-content: center;
-
-	color: var( --purr-white );
-}
-section#imprint div{
-	width: 66%;
-
-	justify-content: center;
-
+section p,
+section div div{
 	font-family: 'MairyExtBd';
 	font-style: italic;
-	font-size: calc(1.6rem + 5vh);
-	line-height: calc(1.6rem + 5vh);
+	
+	font-size: 2.9rem;
+	line-height: 3.1rem;
 }
-
-section#imprint div div{
-	width: 50%;
-	float: left;
+/*
+ * media queries ...
+ * */
+/* Larger than mobile screen */
+@media (min-width: 40.0rem) {
+	section p,
+	section div div{
+		font-family: 'MairyExtBd';
+		font-style: italic;
+	
+		font-size: 2.9rem;
+		line-height: 3.1rem;
+	}
+	section#contact h1{
+		font-size: 6rem;
+	}
 }
-
-section#imprint a,
-section#imprint a:link,
-section#imprint a:visited{
-	color: var(--purr-blue-dark);
-	text-decoration: none;
+/* Larger than tablet screen */
+@media (min-width: 80.0rem) {
+	section p,
+	section div div{
+		font-family: 'MairyExtBd';
+		font-style: italic;
+	
+		font-size: 4.5rem;
+		line-height: 4.7rem;
+	}
 }
-section#imprint a:hover,
-section#imprint a:active{
-	text-decoration: underline;
-	text-decoration-skip: ink;
+/* Larger than desktop screen */
+@media (min-width: 120.0rem) {
+
 }
-
-
-

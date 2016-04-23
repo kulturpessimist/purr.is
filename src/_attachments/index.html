@@ -4,14 +4,26 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<title>PURR.is</title>
-	<meta name="description"				content="">
-	<meta name="keywords" 					content="">
+	<meta name="description"				content="Hi, we are PURR. We are a team of developers specialized in web application development, digital product creation and technology consulting from Munich, Germany.">
+	<meta name="keywords" 					content="PURR,freelancing,freelancer,node,couchdb,webapp,spa,munich,münchen">
 	<meta name="organization" 				content="PURR">
-	<meta property="og:description" 		content="" />
+	<!-- Twitter -->
+	<meta name="twitter:card" 				content="summary_large_image">
+	<meta name="twitter:site" 				content="@PURR_is">
+	<meta name="twitter:creator"			content="@PURR_is">
+	<meta name="twitter:title" 				content="PURR.is">
+	<meta name="twitter:description" 		content="Hi, we are PURR. We are a team of developers specialized in web application development, digital product creation and technology consulting from Munich, Germany.">
+	<meta name="twitter:image" 				content="https://www.purr.is/img/social-card.png">
+	<!-- FB -->
+	<meta property="og:description" 		content="Hi, we are PURR. We are a team of developers specialized in web application development, digital product creation and technology consulting from Munich, Germany." />
 	<meta property="og:locale" 				content="de_DE" />
 	<meta property="og:locale:alternate" 	content="en_EN" />
 	<meta property="og:site_name" 			content="PURR.is" />
-	<meta property="og:image" 				content="" />
+	<meta property="og:image" 				content="https://www.purr.is/img/social-card.png" />
+	<!-- G+ -->
+	<meta itemprop="name" 					content="PURR.is">
+	<meta itemprop="description" 			content="Hi, we are PURR. We are a team of developers specialized in web application development, digital product creation and technology consulting from Munich, Germany.">
+	<meta itemprop="image" 					content="https://www.purr.is/img/social-card.png">
 	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="theme-color" content="#4a4a4a">
@@ -20,25 +32,18 @@
 	<style>
 		.loading{ overflow: hidden; }
 		body.loading > div{
-			width: 100vw; height: 100vh;
-			position: absolute; top:0; left:0;
+			width: 100vw; height: 100vh; position: absolute; top:0; left:0;
 			background-color: #eee;
-			background-image: url('data:image/svg+xml;charset=UTF-8,<svg width="321" height="89" viewBox="0 0 321 89" xmlns="http://www.w3.org/2000/svg"><g fill="#4A4A4A"><path d="M112.475.075h-48.95l-63.525 88h52.525l29.975-48.95 17.875 48.95h50.875z"/><path d="M281.475.075h-48.95l-63.525 88h52.525l29.975-48.95 17.875 48.95h50.875z"/></g></svg>');
-			background-position: center center;
-			background-repeat: no-repeat;
-			z-index: 999999;
+			background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22321%22%20height%3D%2289%22%20viewBox%3D%220%200%20321%2089%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22%234A4A4A%22%3E%3Cpath%20d%3D%22M112.475.075h-48.95l-63.525%2088h52.525l29.975-48.95%2017.875%2048.95h50.875z%22%2F%3E%3Cpath%20d%3D%22M281.475.075h-48.95l-63.525%2088h52.525l29.975-48.95%2017.875%2048.95h50.875z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+			background-position: center center; background-repeat: no-repeat; z-index: 999999;
 			-webkit-transition: all 0.75s linear;
 					transition: all 0.75s linear;
  		}
  		body.loading > div div{
-	 		width: 0vw;
-	 		height: 4px;
-	 		background-color: #50E3C2;
+	 		width: 0vw; height: 4px;
+	 		background-color: #50E3C2; color: #4a4a4a;
 	 		font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-	 		font-size: 10px;
-	 		line-height: 24px;
-	 		text-indent: 4px;
-	 		color: #4a4a4a;
+	 		font-size: 10px; line-height: 24px; text-indent: 4px;
 	 		-ms-animation: animation 3000ms linear infinite;
 	 		    animation: animation 3000ms linear infinite;
 	 	}
@@ -69,22 +74,10 @@
 	</div>
 		
 <!-- purr.is/navigation -->
-	
-	<input type="checkbox" id="navigation" />
-	<label for="navigation" data-close="close menu"></label>
 
-	<nav>
+	<header></header>
 
-		<ul>
-			<li><a href="#contact">Contact</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="#work" class="label nav" data-label="soon">Work</a></li>
-		</ul>
-
-	</nav>
-	
 <!-- purr.is/home -->
-
 	
 	<section id="home">
 		<video autoplay loop muted id="background" src="video/PURR-ink.min.mp4"></video>
@@ -113,26 +106,14 @@
 	
 	<section id="contact">
 		<p>
-			PURR.is/<br/>
-			Schedler, Knothe & Partner<br/>
-			Independent Development<br/><br/>
-		
-			Brucknerstraße 26<br/>
-			81677 München
+			Say hello to PURR!
 		</p>
-		<div>
-			<div>
-				Vertreten durch:<br/>
-				<a href="mailto:alex@purr.is">Alexander Schedler</a><br/>
-				<a href="mailto:toby@purr.is">Tobias Knothe</a>
-			</div>
-			<div>
-				Kontakt:<br/>
-				Fon:	<a href="tel:+491714123929">+49 171 4123 929</a><br/>
-				E-Mail:	<a href="mailto:hello@purr.is">hello@purr.is</a>
-			</div>
-		</div>
-
+		<h1>
+			<a href="mailto:hello@purr.is">hello@purr.is</a>
+		</h1>
+		<p>
+			Want to talk about projects or just want to come over for a beer? Write us.
+		</p>
 	</section>
 
 <!-- purr.is/footer -->

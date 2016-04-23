@@ -32,6 +32,7 @@ body{
 	background-color: var( --purr-gray );
 
 	font-family: "MairyLight";
+	font-size: 18px;
 	
 	overflow-x: hidden;
 	overflow-y: auto;
@@ -41,16 +42,17 @@ body{
 	scroll-behavior: smooth;
 }
 h1{
-	width: 400px;
-	font-size: 6rem;
-	font-weight: bold;
-	color: #eee;
+	font-family: 'MairyExtBd';
+	font-style: italic;
+	
+	font-size: 4rem;
+	line-height: 4.2rem;
 }
 a, a:active, a:hover, a:visited{
 	color: var(--purr-turquoise-dark);
 	font-weight: bold;
 }
-a:hover{
+a:hover, a:active{
 	text-decoration: underline;
 	text-decoration-skip: ink;
 }
@@ -70,17 +72,47 @@ a:hover{
 	border-radius: 4px;
 
 	position: relative;
-	top: calc( -0.5 * (1.6rem + 5vh) );
+	top: -1.2rem;
 	left: 2px;
 }
+
+header{
+	position: fixed;
+	left: 20px; top: 20px;
+	z-index: 11;
+	width: 81px; height: 48px;
+	background-image: url("../img/PURR-darker.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	user-select: none;
+}
+.section--home header{
+	display: none;
+}
+.section--about header{
+	background-image: url("../img/PURR-lighter.png");
+}
+.section--contact header{
+	background-image: url("../img/PURR-darker.png");
+}
 /*
- * Mobile ...
+ * media queries ...
  * */
-@media (max-width:690px) {
-	video{
-		display: none;
+/* Larger than mobile screen */
+@media (min-width: 40.0rem) {
+	header{
+		position: fixed;
+		left: 20px; top: 20px;
+		z-index: 11;
+		width: 12vw; height: 12vh;
 	}
-	div#fallback{
-		display: block;
-	}
+}
+/* Larger than tablet screen */
+@media (min-width: 80.0rem) {
+	
+}
+/* Larger than desktop screen */
+@media (min-width: 120.0rem) {
+	
 }
