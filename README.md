@@ -3,10 +3,12 @@ purr.is
 
 website and contents of purr.is
 
-Last update 13.06.2015
-
 Changelog
 =========
+
+23.04.2016
+
+* mvp v1 is ready (in english)
 
 13.04.2016
 
