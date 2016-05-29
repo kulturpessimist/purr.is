@@ -12,7 +12,7 @@ module.exports = {
 			'src/_attachments/bower_components/zenscroll/zenscroll.js',
 			'src/_attachments/bower_components/riot/riot.js',
 			// own logic...
-			//'src/_attachments/resources/tags.js',
+			'src/_attachments/resources/tags.js',
 			'src/_attachments/js/main.js'
 		],
 		dest: 'src/_attachments/resources/PURR.js',

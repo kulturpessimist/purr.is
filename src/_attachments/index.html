@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" 		content="ie=edge">
 	<meta name="viewport" 					content="width=device-width, initial-scale=1">
-	<meta name="theme-color" 				content="#4a4a4a">
+	<meta name="theme-color" 				content="#50E3C2">
 	<title>PURR.is</title>
 	<meta name="description"				content="Hi, wir sind PURR. Wir sind ein Team von Entwicklern und Unternehmern, spezialisiert auf web application development, digital product creation und technology consulting aus München.">
 	<meta name="keywords" 					content="PURR,freelancing,freelancer,node,couchdb,webapp,spa,munich,münchen">
@@ -48,9 +48,9 @@
 	<link rel="apple-touch-icon"	href="img/touch-icon-120x120.png" sizes="120x120">
 	<link rel="apple-touch-icon" 	href="img/touch-icon-152x152.png" sizes="152x152">
 	
-	<link rel="mask-icon" 		href="img/safari-mask-icon.svg" color="#50E3C2">
-	<link rel="alternate" 		hreflang="de" href="https://www.purr.is/" />
-	<link rel="alternate" 		hreflang="en" href="https://www.purr.is/english" />
+	<link rel="mask-icon" 			href="img/safari-mask-icon.svg" color="#50E3C2">
+	<link rel="alternate" 			hreflang="de" href="https://www.purr.is/" />
+	<link rel="alternate" 			hreflang="en" href="https://www.purr.is/english" />
 	<style>
 		.loading{ overflow: hidden; }
 		body.loading > div{
@@ -64,7 +64,8 @@
  		body.loading > div div{
 	 		width: 0vw; height: 4px;
 	 		background-color: #50E3C2; color: #4a4a4a;
-	 		font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	 		font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto",
+	 			"Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
 	 		font-size: 10px; line-height: 24px; text-indent: 4px;
 	 		-ms-animation: animation 3000ms linear infinite;
 	 		    animation: animation 3000ms linear infinite;
@@ -89,57 +90,37 @@
 </head>
 <body class="loading">
 
-<!-- purr.is/loading -->
-
 	<div>
 		<div>Loading...</div>
 	</div>
 		
-<!-- purr.is/navigation -->
+	<header>
+		<purr-logo color="#eeeeee" stroke="10"></purr-logo>
+	</header>
 
-	<header></header>
-
-<!-- purr.is/home -->
-	
 	<section id="home">
 		<video autoplay loop muted id="background" src="video/PURR-ink.min.mp4"></video>
 		<div id="fallback"></div>
 		<div id="mask"></div>
 	</section>
 
-<!-- purr.is/about -->
+<!-- contents -->
 
-	<section id="about">
-		
-		<p>
-			Hi, wir sind PURR.
-			Wir sind ein Team von Entwicklern und Unternehmern, spezialisiert auf
-			<a href="#">web application development</a>,
-			<a href="#">digital product creation</a> und
-			<a href="#">technology consulting</a> aus München, Deutschland.
-		</p>
-				
-	</section>
+	<about></about>
 
-<!-- purr.is/contact -->
+	<manifest></manifest>
 	
-	<section id="contact">
-		<p>
-			Sag Hallo zu PURR!
-		</p>
-		<h1>
-			<a href="mailto:hello@purr.is">hello@purr.is</a>
-		</h1>
-		<p>
-			Willst Du über ein Projekt sprechen, oder einfach nur einmal auf ein Bier vorbeischauen? Schreib uns.
-		</p>
-	</section>
+	<contact></contact>
 
-<!-- purr.is/footer -->
+	<imprint></imprint>
+
+<!-- footer -->
 
 	<footer>
 		<a href="#next" class="next">
-			<img src="img/arrow.png" alt="scroll down" />
+			<svg width="144" height="23" viewBox="0 0 144 23" xmlns="http://www.w3.org/2000/svg">
+				<path d="M2 2l70 20 70-20" stroke-width="2" stroke="#4A4A4A" fill="none"/>
+			</svg>
 		</a>
 		<i>PURR.is/<span>#home</span></i>
 	</footer>
@@ -160,7 +141,7 @@
 		  				var loader = document.querySelector('body > div')
 		  				loader.style.opacity = 0;
 		  				setTimeout(function(){
-		  					document.body.className = 'section--home';
+		  					document.body.className=="loading"?document.body.className='section--home':'';
 		  					document.body.removeChild(this);
 		  				}.bind(loader), 760);
 		  			}, 1000);

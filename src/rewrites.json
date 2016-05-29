@@ -1,19 +1,19 @@
 [
 	{
 		"from":		"",
-		"to":		"index.de.html"
+		"to":		"index.html"
 	},
 	{
 		"from":		"coming",
-		"to":		"index.de.html"
+		"to":		"index.html"
 	},
 	{
 		"from":		"awesome",
-		"to":		"index.de.html"
+		"to":		"index.html"
 	},
 	{
 		"from":		"english",
-		"to":		"index.en.html"
+		"to":		"index.html"
 	},
 
 	{
@@ -33,6 +33,22 @@
 		"from":		"favicon.ico",
 		"to":		"img/favicon.ico"
 	},
+	{
+		"from":		"apple-touch-icon.png",
+		"to":		"img/touch-icon-152x152.png"
+	},
+	
+	{
+		"from":		"google7f311b514ca2b68b.html",
+		"to":		"resources/google7f311b514ca2b68b.html"
+	},
+	{
+		"from":		"fd01f7892821.html",
+		"to":		"resources/fd01f7892821.html"
+	},
+	
+	
+	
 	{
 		"from":		"font/*",
 		"to":		"font/*"

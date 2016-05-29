@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'MairyExtBd';
+    src: url('Mairy-ExtraBoldItalic.woff') format('woff');
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

@@ -8,6 +8,7 @@ module.exports = {
 		'concat:css',
 		'postcss',
 		'riot',
+		'hjson',
 		'concat:js',
 		'uglify'
   	],

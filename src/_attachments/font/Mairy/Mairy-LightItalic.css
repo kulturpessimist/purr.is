@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'MairyLight';
+    src: url('Mairy-LightItalic.woff') format('woff');
+    font-style: italic;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+

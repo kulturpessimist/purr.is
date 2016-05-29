@@ -3,24 +3,20 @@
 	<section id="imprint">
 		
 		<div>
-			PURR.is/Schedler, Knothe & Partner<br/>
-			Freie Softwareentwicklungsgesellschaft<br/>
-			
-			Brucknerstraße 26<br/>
-			81677 München<br/><br/>
-			
-			<div>
-				Vertreten durch:<br/>
-				<a href="mailto:alex@purr.is">Alexander Schedler</a><br/>
-				<a href="mailto:toby@purr.is">Tobias Knothe</a>
+			<p id="address"></p>
+			<div id="column1">
+				
 			</div>
-			<div>
-				Kontakt:<br/>
-				Fon:	<a href="tel:+491714123929">+49 171 4123 929</a><br/>
-				E-Mail:	<a href="mailto:hello@purr.is">hello@purr.is</a>
+			<div id="column2">
 			</div>
 		</div>
 			
 	</section>
+	
+	<script>
+		this.address.innerHTML = PURR.i18n.imprint.address;
+		this.column1.innerHTML = PURR.i18n.imprint.paragraphs[0];
+		this.column2.innerHTML = PURR.i18n.imprint.paragraphs[1];
+	</script>
 	
 </imprint>

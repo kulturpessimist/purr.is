@@ -13,10 +13,13 @@
 	--purr-turquoise: #50E3C2;
 	--purr-blue: #039BE5;
 	--purr-red: #FC4058;
+	--purr-lilac: #6653FF;
 	
 	--purr-turquoise-dark: #3BCFAE;
 	--purr-blue-dark: #1A5775;
 	--purr-red-dark: #962635;
+
+	--purr-paper: #F4F4F0;
 }
 /*
  * General Stuff
@@ -25,6 +28,12 @@
 	background-color: var( --purr-turquoise );
 	color: #eeeeee;
 }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
 body{
 	margin: 0; padding:0;
 	height: 100vh;
@@ -32,15 +41,24 @@ body{
 	background-color: var( --purr-gray );
 
 	font-family: "MairyLight";
-	font-size: 18px;
+	font-style: italic;
+   	font-weight: 300;
+   	letter-spacing: 0.01em;
+   	line-height: 1.6;
+ 	font-size: 18px;
 	
 	overflow-x: hidden;
 	overflow-y: auto;
 	
 	scroll-snap-type: mandatory;
-	scroll-snap-points-y: 100vh;
+	scroll-snap-destination: 100% 0%;
 	scroll-behavior: smooth;
 }
+section#home, about, manifest, contact, imprint{
+	scroll-snap-coordinate: 50% 50%;
+}
+
+
 h1{
 	font-family: 'MairyExtBd';
 	font-style: italic;
@@ -80,21 +98,39 @@ header{
 	position: fixed;
 	left: 20px; top: 20px;
 	z-index: 11;
-	width: 81px; height: 48px;
-	background-image: url("../img/PURR-darker.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center center;
+	width: 120px;
 	user-select: none;
 }
-.section--home header{
-	display: none;
+header purr-logo{
+	width: 300px;
 }
-.section--about header{
-	background-image: url("../img/PURR-lighter.png");
+header purr-logo svg g{
+	stroke: var( --purr-gray );
+	fill: rgba(254,254,254, 0);
+	transition: stroke 1s, stroke-width 1s, fill 1s;
 }
-.section--contact header{
-	background-image: url("../img/PURR-darker.png");
+
+.section--home header purr-logo svg g{
+	stroke: var( --purr-gray );
+}
+.section--about header purr-logo svg g{
+	stroke: var( --purr-white );
+	fill: var( --purr-white );
+	stroke-width:0;
+}
+.section--manifest header purr-logo svg g{
+	stroke: #6653FF;
+	stroke: var( --purr-blue )
+}
+.section--contact header purr-logo svg g{
+	stroke: var( --purr-gray );
+	fill: var( --purr-gray );
+	stroke-width:0;
+}
+.section--imprint header purr-logo svg g{
+	stroke: var( --purr-white );
+	fill: var( --purr-white );
+	stroke-width:0;
 }
 /*
  * media queries ...
@@ -105,7 +141,7 @@ header{
 		position: fixed;
 		left: 20px; top: 20px;
 		z-index: 11;
-		width: 12vw; height: 12vh;
+		width: 120px;
 	}
 }
 /* Larger than tablet screen */

@@ -100,15 +100,22 @@ footer i{
 footer .next{
 	display: block;
 	width: 100%;
+	height: 40px;
 
 	text-align: center;
 }
-footer .next img{
-	width: 140px;
+footer .next svg path{
+	stroke: #eee;
+	transition: stroke 1s, stroke-width 1s, fill 1s;
 }
-body.section--imprint footer .next{
-	display: none;
+body.section--manifest footer .next svg path{
+	stroke: var(--purr-blue);
 }
+
+body.section--contact footer .next svg path{
+	stroke: #4a4a4a;
+}
+
 body.section--contact footer i{
 	color: var( --purr-gray );
 }

@@ -11,6 +11,7 @@ module.exports = function(grunt) {
 			staticMappings: {
 				'couch-compile': 		'grunt-couch',
 				'couch-push': 			'grunt-couch',
+				'hanson': 				'grunt-hanson-plugin',
 				'clean-couch-compile': 	'grunt/custom-tasks/clean-couch-compile.js'
 			}
 		}

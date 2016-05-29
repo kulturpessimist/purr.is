@@ -8,6 +8,7 @@ module.exports = function (grunt) {
 		 	"css/",
 		 	"js/",
 		 	"tags/",
+		 	"i18n/",
 		 	"resources/tags.js",
 		 	"resources/PURR.css",
 		 	"resources/PURR.js"

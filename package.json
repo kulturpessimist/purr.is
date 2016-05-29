@@ -15,6 +15,7 @@
     "grunt-contrib-uglify": "~0.4.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-couch": "^1.4.0",
+    "grunt-hjson": "^1.8.0",
     "grunt-myth": "^1.0.1",
     "grunt-riot": "^0.1.6",
     "jit-grunt": "^0.10.0",
@@ -25,6 +26,6 @@
     "docs": "node_modules/groc/bin/groc"
   },
   "dependencies": {
-    "riot": "^2.3.18"
+    "riot": "^2.4.1"
   }
 }
