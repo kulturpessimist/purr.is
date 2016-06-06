@@ -18,6 +18,7 @@
 	--purr-turquoise-dark: #3BCFAE;
 	--purr-blue-dark: #1A5775;
 	--purr-red-dark: #962635;
+	--purr-lilac-dark: #33297F;
 
 	--purr-paper: #F4F4F0;
 }
@@ -54,10 +55,6 @@ body{
 	scroll-snap-destination: 100% 0%;
 	scroll-behavior: smooth;
 }
-section#home, about, manifest, contact, imprint{
-	scroll-snap-coordinate: 50% 50%;
-}
-
 
 h1{
 	font-family: 'MairyExtBd';

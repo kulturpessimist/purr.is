@@ -19,36 +19,36 @@
 	<meta name="twitter:creator"			content="@PURR_is">
 	<meta name="twitter:title" 				content="PURR.is">
 	<meta name="twitter:description" 		content="Hi, wir sind PURR. Wir sind ein Team von Entwicklern und Unternehmern, spezialisiert auf web application development, digital product creation und technology consulting aus München.">
-	<meta name="twitter:image" 				content="https://www.purr.is/img/social-card.png">
+	<meta name="twitter:image" 				content="https://www.purr.is/assets/images/social-card.png">
 	<!-- FB -->
 	<meta property="og:description" 		content="Hi, wir sind PURR. Wir sind ein Team von Entwicklern und Unternehmern, spezialisiert auf web application development, digital product creation und technology consulting aus München." />
 	<meta property="og:locale" 				content="de_DE" />
 	<meta property="og:locale:alternate" 	content="en_EN" />
 	<meta property="og:site_name" 			content="PURR.is" />
-	<meta property="og:image" 				content="https://www.purr.is/img/social-card.png" />
+	<meta property="og:image" 				content="https://www.purr.is/assets/images/social-card.png" />
 	<!-- G+ -->
 	<meta itemprop="name" 					content="PURR.is">
 	<meta itemprop="description" 			content="Hi, wir sind PURR. Wir sind ein Team von Entwicklern und Unternehmern, spezialisiert auf web application development, digital product creation und technology consulting aus München.">
-	<meta itemprop="image" 					content="https://www.purr.is/img/social-card.png">
+	<meta itemprop="image" 					content="https://www.purr.is/assets/images/social-card.png">
 	<script type="application/ld+json">
 		{
 	  		"@context" : "http://schema.org",
 	  		"@type" : "Organization",
 	  		"name" : "PURR.is",
 	  		"url" : "https://www.purr.is",
-	  		"logo": "https://www.purr.is/img/social-card.png",
+	  		"logo": "https://www.purr.is/assets/images/social-card.png",
 	  		"sameAs" : [ "http://www.twitter.com/purr_is" ]
 		}
 	</script>
 	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-	<link rel="shortcut icon" 		href="img/favicon.ico" type="image/x-icon">
-	<link rel="icon" 				href="img/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" 	href="img/touch-icon-60x60.png">
-	<link rel="apple-touch-icon" 	href="img/touch-icon-76x76.png" sizes="76x76" >
-	<link rel="apple-touch-icon"	href="img/touch-icon-120x120.png" sizes="120x120">
-	<link rel="apple-touch-icon" 	href="img/touch-icon-152x152.png" sizes="152x152">
+	<link rel="shortcut icon" 		href="assets/images/favicon.ico" type="image/x-icon">
+	<link rel="icon" 				href="assets/images/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" 	href="assets/images/touch-icon-60x60.png">
+	<link rel="apple-touch-icon" 	href="assets/images/touch-icon-76x76.png" 	sizes="76x76" >
+	<link rel="apple-touch-icon"	href="assets/images/touch-icon-120x120.png" sizes="120x120">
+	<link rel="apple-touch-icon" 	href="assets/images/touch-icon-152x152.png" sizes="152x152">
 	
-	<link rel="mask-icon" 			href="img/safari-mask-icon.svg" color="#50E3C2">
+	<link rel="mask-icon" 			href="assets/images/safari-mask-icon.svg" color="#50E3C2">
 	<link rel="alternate" 			hreflang="de" href="https://www.purr.is/" />
 	<link rel="alternate" 			hreflang="en" href="https://www.purr.is/english" />
 	<style>
@@ -98,21 +98,17 @@
 		<purr-logo color="#eeeeee" stroke="10"></purr-logo>
 	</header>
 
-	<section id="home">
-		<video autoplay loop muted id="background" src="video/PURR-ink.min.mp4"></video>
-		<div id="fallback"></div>
-		<div id="mask"></div>
-	</section>
-
 <!-- contents -->
 
-	<about></about>
+	<purr-home></purr-home>
 
-	<manifest></manifest>
+	<purr-about></purr-about>
+
+	<purr-manifest></purr-manifest>
 	
-	<contact></contact>
+	<purr-contact></purr-contact>
 
-	<imprint></imprint>
+	<purr-imprint></purr-imprint>
 
 <!-- footer -->
 
@@ -123,6 +119,7 @@
 			</svg>
 		</a>
 		<i>PURR.is/<span>#home</span></i>
+		<!--<a onclick="PURR.switchLanguage('en')">[EN]</a>-->
 	</footer>
 		
 	<script>
@@ -149,7 +146,7 @@
 		  	}
 		}
 	</script>
-	<link rel="stylesheet" href="font/fonts.css">
+	<link rel="stylesheet" href="assets/fonts/fonts.css">
 	<link rel="stylesheet" href="resources/PURR.min.css">
 	<script src="resources/PURR.min.js"></script>
 </body>

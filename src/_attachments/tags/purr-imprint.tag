@@ -1,4 +1,4 @@
-<imprint>
+<purr-imprint>
 	
 	<section id="imprint">
 		
@@ -19,4 +19,4 @@
 		this.column2.innerHTML = PURR.i18n.imprint.paragraphs[1];
 	</script>
 	
-</imprint>
+</purr-imprint>

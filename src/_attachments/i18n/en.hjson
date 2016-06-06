@@ -1,14 +1,13 @@
 {
-		meta: Hi, wir sind PURR. Wir sind ein Team von Entwicklern und Unternehmern, spezialisiert auf web application development, digital product creation und technology consulting aus München.
-		
+		meta: Hi, we are PURR. We are a team of developers specialized in web application development, digital product creation and technology consulting from Munich, Germany.
+
 		about:{
-			headline: Hi, wir sind PURR.
+			headline: Hi, we are PURR.
 			paragraphs:[
 				'''
-					Wir sind ein Team von Entwicklern und Unternehmern, spezialisiert auf
-					web application development,
-					digital product creation und
-					technology consulting aus München, Deutschland.
+					We are a team of developers specialized
+					in web application development, digital product creation and
+					technology consulting from Munich, Germany.
 				'''
 			]
 		},
@@ -32,7 +31,7 @@
 					Hyperlocal B2B2C Block Chain Cloud Appliances as a Service? Wir arbeiten an echten Lösungen,
 					nicht nur an hochtrabenden Floskeln. Uns geht es um aufrichtige Projekte, nicht um halbe Sachen,
 					denn wir begegnen uns ehrlich und auf Augenhöhe. Wenn das geklärt ist,
-					ist immer noch Zeit genug fancy zu sein <i>😉</i>.
+					ist immer noch Zeit genug fancy zu sein ;-).
 				'''
 			}, {
 				headline: Sustainability is key
@@ -74,7 +73,7 @@
 					Wir erwarten von Technologie, dass Sie sich am Menschen orientiert und der Gesellschaft dient.
 					Magische, funktionale und nachhaltige Lösungen die den Menschen in den Mittelpunkt stellt sind unser Ziel.
 					Die besten Lösungen sind stets transparent, intuitiv und stärken Ihre Anwender.
-					<a href="https://ind.ie/ethical-design/" target="_blank"><i>▲❤</i> We practice Ethical Design.</a>
+					▲❤ We practice Ethical Design.
 				'''
 			}, {
 				headline: We all are people
@@ -96,10 +95,10 @@
 		},
 		
 		contact:{
-			headline: Sag Hallo zu PURR!
+			headline: Say hello to PURR!
 			paragraphs:[
 				hello@purr.is
-				Willst Du über ein Projekt sprechen, oder einfach nur einmal auf ein Bier vorbeischauen? Schreib uns.
+				Want to talk about projects or just want to come over for a beer? Write us.
 			]
 		},
 
@@ -108,19 +107,19 @@
 				PURR.is/
 				Alexander Schedler &
 				Tobias Knothe<br/>
-				Freie Softwareentwicklungsgesellschaft<br/>
+				Independent Software Development<br/>
 			
 				Brucknerstraße 26<br/>
-				81677 München<br/><br/>
+				81677 Munich<br/><br/>
 			'''
 			paragraphs:[
 				'''
-					Vertreten durch:<br/>
+					Represented by:<br/>
 					<a href="mailto:alex@purr.is">Alexander Schedler</a><br/>
 					<a href="mailto:toby@purr.is">Tobias Knothe</a>
 				'''
 				'''
-					Kontakt:<br/>
+					Contact:<br/>
 					Fon:	<a href="tel:+491714123929">+49 171 4123 929</a><br/>
 					E-Mail:	<a href="mailto:hello@purr.is">hello@purr.is</a>
 				'''

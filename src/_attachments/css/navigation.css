@@ -48,13 +48,13 @@ label[for="navigation"] {
 	z-index: 11;
   	width: 161px; height: 96px;
   	cursor: pointer;
-  	background-image: url("../img/PURR-lighter.png");
+  	background-image: url("../assets/images/PURR-lighter.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center;
 }
 body.section--contact label[for="navigation"]{
-	background-image: url("../img/PURR-darker.png");
+	background-image: url("../assets/images/PURR-darker.png");
 }
 #navigation:checked + label:after {
   	content: attr(data-close);
@@ -68,7 +68,7 @@ body.section--contact label[for="navigation"]{
 	font-style: italic;
 }
 #navigation:checked + label[for="navigation"]{
-	background-image: url("../img/PURR-darker.png");
+	background-image: url("../assets/images/PURR-darker.png");
 }
 
 #navigation:checked ~ nav {
@@ -116,6 +116,9 @@ body.section--contact footer .next svg path{
 	stroke: #4a4a4a;
 }
 
+body.section--manifest footer i{
+	color: var( --purr-blue );
+}
 body.section--contact footer i{
 	color: var( --purr-gray );
 }

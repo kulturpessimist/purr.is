@@ -1,4 +1,4 @@
-<about>
+<purr-about>
 		
 	<section id="about">
 				
@@ -9,4 +9,4 @@
 				
 	</section>
 			
-</about>
+</purr-about>

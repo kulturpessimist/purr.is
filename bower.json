@@ -21,6 +21,6 @@
     "fetch": "^0.11.0",
     "milligram": "^1.1.0",
     "scrollsnap-polyfill": "ckrack/scrollsnap-polyfill#^0.1.0",
-    "trianglify": "^0.4.0"
+    "seenjs": "http://seenjs.io/dist/latest/seen.js"
   }
 }

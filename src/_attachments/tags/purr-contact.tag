@@ -4,7 +4,7 @@
 	
 -->
 
-<contact>
+<purr-contact>
 	
 	<section id="contact">
 
@@ -22,4 +22,4 @@
 
 	</section>
 	
-</contact>
+</purr-contact>

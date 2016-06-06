@@ -7,9 +7,9 @@ module.exports = {
 			// Polyfills
 			'src/_attachments/bower_components/fetch/fetch.js',
 			'src/_attachments/bower_components/scrollsnap-polyfill/dist/scrollsnap-polyfill.bundled.js',
-			'src/_attachments/js/modernizer.videoautoplay.js',
 			// Frameworks
 			'src/_attachments/bower_components/zenscroll/zenscroll.js',
+			'src/_attachments/bower_components/seenjs/index.js',
 			'src/_attachments/bower_components/riot/riot.js',
 			// own logic...
 			'src/_attachments/resources/tags.js',

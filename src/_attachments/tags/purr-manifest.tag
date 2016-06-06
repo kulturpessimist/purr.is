@@ -1,4 +1,4 @@
-<manifest>
+<purr-manifest>
 		
 	<section id="manifest">
 	
@@ -14,7 +14,7 @@
 			<article each="{ chapter, i in PURR.i18n.manifest.chapters }" id="{ 'chapter'+i }" >
 				<h2>{ chapter.headline }</h2>
 				<p>
-					{ chapter.content }
+					<raw content="{ chapter.content }" />
 				</p>
 			</article>
 						
@@ -22,4 +22,4 @@
 
 	</section>
 	
-</manifest>
+</purr-manifest>

@@ -22,20 +22,20 @@
 	},
 	{
 		"from":		"img/*",
-		"to":		"img/*"
+		"to":		"assets/images/*"
 	},
 	{
 		"from":		"js/*",
-		"to":		"js/*"
+		"to":		"resources/*"
 	},
 
 	{
 		"from":		"favicon.ico",
-		"to":		"img/favicon.ico"
+		"to":		"assets/images/favicon.ico"
 	},
 	{
 		"from":		"apple-touch-icon.png",
-		"to":		"img/touch-icon-152x152.png"
+		"to":		"assets/images/touch-icon-152x152.png"
 	},
 	
 	{
@@ -51,11 +51,11 @@
 	
 	{
 		"from":		"font/*",
-		"to":		"font/*"
+		"to":		"assets/fonts/*"
 	},
 	{
 		"from":		"fonts/*",
-		"to":		"font/*"
+		"to":		"assets/fonts/*"
 	},
 	{
 		"from":		"/*",
