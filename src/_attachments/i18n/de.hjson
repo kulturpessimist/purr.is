@@ -56,23 +56,23 @@
 				content: '''
 					Software lebt und entwickelt sich weiter. Gute Software ist dann kein Selbstzweck,
 					wenn sie  Probleme löst und Mehrwerte schafft. Selbst ein „minimum viable product“
-					ist in erster Linie viable, nach Innen und nach Aussen.
-					Eine Anwendung muss von Begin an diesen Ansprüchen genügen und ein Fundament bieten,
+					ist in erster Linie viable, nach Innen und nach Außen.
+					Eine Anwendung muss von Beginn an diesen Ansprüchen genügen und ein Fundament bieten,
 					auf dem man Aufbauen kann.
 				'''
 			}, {
 				headline: Simple not easy
 				content: '''
 					Oft wird einfach („easy“) mit unkompliziert („simple“) verwechselt.
-					In Wirklichkeit sind gerade die unkomplizierten Lösung nicht die einfachen.
-					Wir sind der Überzeugung, nicht den einfachen Weg zu gehen um dafür elegante,
-					unkomplizierte Lösungen herzustellen. Gutes Design und gute Architektur führt zu guten Ergebnissen.
+					In Wirklichkeit sind gerade die unkomplizierten Lösungen nicht die einfachen.
+					Wir sind der Überzeugung nicht den einfachen Weg zu gehen, um dafür elegante,
+					unkomplizierte Lösungen herzustellen. Gutes Design und gute Architektur führen zu guten Ergebnissen.
 				'''
 			}, {
 				headline: Ethical Design & Technology
 				content: '''
 					Wir erwarten von Technologie, dass Sie sich am Menschen orientiert und der Gesellschaft dient.
-					Magische, funktionale und nachhaltige Lösungen die den Menschen in den Mittelpunkt stellt sind unser Ziel.
+					Magische, funktionale und nachhaltige Lösungen, die den Menschen in den Mittelpunkt stellen, sind unser Ziel.
 					Die besten Lösungen sind stets transparent, intuitiv und stärken Ihre Anwender.
 					<a href="https://ind.ie/ethical-design/" target="_blank"><i>▲❤</i> We practice Ethical Design.</a>
 				'''

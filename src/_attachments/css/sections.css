@@ -5,7 +5,7 @@ section#home{
 	display: block;
 	width: 100vw; height: 100vh;
 }
-#seen-canvas{
+section#home #seen-canvas{
 	width: 50vw;
 	height: 50vh;
   
@@ -15,8 +15,8 @@ section#home{
 	z-index: -999;
 }
 
-#mask,
-#color {
+section#home #mask,
+section#home #color {
 	width: 100vw;
 	height: 100vh;
 	position: absolute;
@@ -24,7 +24,7 @@ section#home{
 	left: 0px;
 }
 
-#mask {
+section#home #mask {
 	background-image: url('../assets/images/PURR-cutout.png');
 	background-repeat: no-repeat;
 	background-size: cover;
