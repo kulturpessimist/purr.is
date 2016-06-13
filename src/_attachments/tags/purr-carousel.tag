@@ -2,10 +2,12 @@
 
 	<style>
 
-		carousel {
+		purr-carousel {
 			position: relative;
 			overflow: hidden;
+			overflow-x: hidden;
 		  	width: 100vw; height: 100vh;
+
 		}
 
 		div#slider {
@@ -13,18 +15,18 @@
 		  	margin: 0;
 		  	left: 0%;
 		  	text-align: left;
-		  	font-size: 0;
 		  	transition: left 1s;
 		}
 				
 		div.forward,
 		div.backward{
-			width: 100px;
+			width: 40px;
 			height: 100vh;
 			
 			background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2222%22%20height%3D%22142%22%20viewBox%3D%220%200%2022%20142%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M1%20141l20-70-20-70%22%20stroke-width%3D%222%22%20stroke%3D%22%23039be5%22%20fill%3D%22none%22%2F%3E%3C%2Fsvg%3E');
 			background-position: center center;
 			background-repeat: no-repeat;
+			background-size: 30%;
 		
 			cursor: pointer;
 			position: relative;
@@ -36,7 +38,7 @@
 			transform: rotate(180deg);
 		}
 		div.forward{
-			margin-left: calc(100vw - 100px);
+			margin-left: calc(100vw - 50px);
 			margin-top: -100vh;
 			z-index: 9999998;
 		}
@@ -52,7 +54,29 @@
 			cursor: default;
 			pointer-events: none;
 		}
-		
+		/*
+		* media queries ...
+		**/
+
+		/* Larger than mobile screen */
+		@media (min-width: 40.0rem) {
+			div.forward,
+			div.backward{
+				width: 100px;
+				background-size: inherit;
+			}
+			div.forward{
+				margin-left: calc(100vw - 100px);
+			}
+		}
+		/* Larger than tablet screen */
+		@media (min-width: 80.0rem) {
+			
+		}
+		/* Larger than desktop screen */
+		@media (min-width: 120.0rem) {
+			
+		}
 	</style>
 		
 	<div id="slider">
@@ -65,7 +89,7 @@
 	<div class="forward" onclick="{ this.next }"></div>
 
 	<script>
-			this.counter = 0;
+		this.counter = 0;
 		
 		this.on('mount', function() {
 			this.counter = 0;
@@ -81,7 +105,6 @@
 		  	this.counter==this.max?this.counter=0:++this.counter;
 		  	this.slider.style.left = "-"+(this.counter*100)+"%";
 		}
-			
 	</script>
 	
 </purr-carousel>

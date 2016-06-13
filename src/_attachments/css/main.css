@@ -4,7 +4,7 @@
 	 \ \  _-/ \ \ \_\ \  \ \  __<   \ \  __<
 	  \ \_\    \ \_____\  \ \_\ \_\  \ \_\ \_\
 	   \/_/     \/_____/   \/_/ /_/   \/_/ /_/
- 
+
 */
 :root {
 	--purr-white: #EEEEEE;
@@ -15,24 +15,24 @@
 	--purr-red: #FC4058;
 	--purr-lilac: #6653FF;
 	
-	--purr-turquoise-dark: #3BCFAE;
+	--purr-turquoise-dark: color( var(--purr-turquoise) blackness(33%) ); /* or #3BCFAE; */
 	--purr-blue-dark: #1A5775;
 	--purr-red-dark: #962635;
 	--purr-lilac-dark: #33297F;
 
-	--purr-paper: #F4F4F0;
+	--purr-paper: #FDF3E2;
 }
 /*
  * General Stuff
- * */
+ **/
 ::selection {
 	background-color: var( --purr-turquoise );
 	color: #eeeeee;
 }
 
 html {
-  box-sizing: border-box;
-  font-size: 62.5%;
+  	box-sizing: border-box;
+  	font-size: 18px;
 }
 
 body{
@@ -45,24 +45,40 @@ body{
 	font-style: italic;
    	font-weight: 300;
    	letter-spacing: 0.01em;
-   	line-height: 1.6;
- 	font-size: 18px;
-	
+	/* minFont + ( maxFont - minFont ) * ( 100vw - minScreen ) / ( maxScreen - minScreen ) */
+	font-size: calc( 22px + (36 - 22) * (100vw - 320px) / (1000 - 320) ); 
+	line-height: 1.3em;
+
 	overflow-x: hidden;
 	overflow-y: auto;
-	
+	/*
 	scroll-snap-type: mandatory;
 	scroll-snap-destination: 100% 0%;
 	scroll-behavior: smooth;
+	*/
 }
 
 h1{
 	font-family: 'MairyExtBd';
 	font-style: italic;
-	
-	font-size: 4rem;
-	line-height: 4.2rem;
+
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	line-height: 1.0em;
 }
+h2{
+	font-family: 'MairyExtBd';
+	font-style: italic;
+
+	margin-top: 0.0em;
+	margin-bottom: 0.2em;
+	line-height: 1.0em;
+}
+p{
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+}
+
 a, a:active, a:hover, a:visited{
 	color: var(--purr-turquoise-dark);
 	font-weight: bold;
@@ -73,17 +89,17 @@ a:hover, a:active{
 }
 .label:after{
 	content: attr(data-label);
-	display: inline-block;
+	/*display: inline-block;*/
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 	white-space: nowrap;
 	vertical-align: baseline;
 
 	text-transform: uppercase;
 
-	font-size: 1.5rem;
-	line-height: 1.5rem;
+	font-size: 0.3em;
+	line-height: 0.4em;
 
-	padding: 4px 4px 0px 4px;
+	padding: 8px 8px 0px 4px;
 	border-radius: 4px;
 
 	position: relative;
@@ -93,13 +109,12 @@ a:hover, a:active{
 
 header{
 	position: fixed;
-	left: 20px; top: 20px;
+	left: 10px; top: 20px;
+	backface-visibility:hidden;
 	z-index: 11;
 	width: 120px;
+	height: 60px;
 	user-select: none;
-}
-header purr-logo{
-	width: 300px;
 }
 header purr-logo svg g{
 	stroke: var( --purr-gray );
@@ -109,6 +124,7 @@ header purr-logo svg g{
 
 .section--home header purr-logo svg g{
 	stroke: var( --purr-gray );
+	stroke-width:0;
 }
 .section--about header purr-logo svg g{
 	stroke: var( --purr-white );
@@ -116,7 +132,7 @@ header purr-logo svg g{
 	stroke-width:0;
 }
 .section--manifest header purr-logo svg g{
-	stroke: #6653FF;
+	stroke: var( --purr-lilac );
 	stroke: var( --purr-blue )
 }
 .section--contact header purr-logo svg g{
@@ -129,17 +145,19 @@ header purr-logo svg g{
 	fill: var( --purr-white );
 	stroke-width:0;
 }
+
 /*
  * media queries ...
- * */
+ **/
 /* Larger than mobile screen */
 @media (min-width: 40.0rem) {
 	header{
-		position: fixed;
-		left: 20px; top: 20px;
-		z-index: 11;
-		width: 120px;
+		width: 130px;
+		height: 100px;
+		left: 20px;
+		top: 20px;
 	}
+	
 }
 /* Larger than tablet screen */
 @media (min-width: 80.0rem) {

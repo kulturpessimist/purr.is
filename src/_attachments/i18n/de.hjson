@@ -29,10 +29,10 @@
 			}, {
 				headline: No Bullshit (except if you want it)
 				content: '''
-					Hyperlocal B2B2C Block Chain Cloud Appliances as a Service? Wir arbeiten an echten Lösungen,
+					Hyperlocal B2B2C block chain cloud appliances as a service? Wir arbeiten an echten Lösungen,
 					nicht nur an hochtrabenden Floskeln. Uns geht es um aufrichtige Projekte, nicht um halbe Sachen,
 					denn wir begegnen uns ehrlich und auf Augenhöhe. Wenn das geklärt ist,
-					ist immer noch Zeit genug fancy zu sein <i>😉</i>.
+					ist immer noch Zeit genug fancy zu sein. <i>😉</i>
 				'''
 			}, {
 				headline: Sustainability is key
@@ -42,7 +42,7 @@
 					Verbindlichkeiten bringt jedes System aus dem Gleichgewicht.
 					Kein Bestandteil eines Systems existiert als Selbstzweck. Daten, Programme, Unternehmen –
 					selbst Ideen – schaffen Verbindlichkeiten und bedürfen nachhaltiger Konzepte
-					für ihre eigene begründete Existenz.
+					für ihre eigene, begründete Existenz.
 				'''
 			}, {
 				headline: Constrains are good
@@ -56,7 +56,7 @@
 				content: '''
 					Software lebt und entwickelt sich weiter. Gute Software ist dann kein Selbstzweck,
 					wenn sie  Probleme löst und Mehrwerte schafft. Selbst ein „minimum viable product“
-					ist in erster Linie viable, nach Innen und nach Außen.
+					ist in erster Linie „viable“, nach Innen und nach Außen.
 					Eine Anwendung muss von Beginn an diesen Ansprüchen genügen und ein Fundament bieten,
 					auf dem man Aufbauen kann.
 				'''
@@ -108,20 +108,20 @@
 				PURR.is/
 				Alexander Schedler &
 				Tobias Knothe<br/>
-				Freie Softwareentwicklungsgesellschaft<br/>
+				Freie Softwareentwicklung<br/>
 			
 				Brucknerstraße 26<br/>
 				81677 München<br/><br/>
 			'''
 			paragraphs:[
 				'''
-					Vertreten durch:<br/>
-					<a href="mailto:alex@purr.is">Alexander Schedler</a><br/>
+					Vertreten durch: <br/>
+					<a href="mailto:alex@purr.is">Alexander Schedler</a> &
 					<a href="mailto:toby@purr.is">Tobias Knothe</a>
 				'''
 				'''
 					Kontakt:<br/>
-					Fon:	<a href="tel:+491714123929">+49 171 4123 929</a><br/>
+					Fon:	<a href="tel:+491714123929">+49 171 4123 929</a> 
 					E-Mail:	<a href="mailto:hello@purr.is">hello@purr.is</a>
 				'''
 			]

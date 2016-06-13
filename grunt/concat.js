@@ -5,6 +5,7 @@ module.exports = {
 		},
 		src: [
 			// Polyfills
+			'src/_attachments/bower_components/es6-promise/es6-promise.js',
 			'src/_attachments/bower_components/fetch/fetch.js',
 			'src/_attachments/bower_components/scrollsnap-polyfill/dist/scrollsnap-polyfill.bundled.js',
 			// Frameworks
@@ -22,8 +23,7 @@ module.exports = {
 			separator: '',
 		},
 		src: [
-			//'src/_attachments/bower_components/normalize.css/normalize.css',
-			'src/_attachments/bower_components/milligram/dist/milligram.css',
+			'src/_attachments/bower_components/normalize-css/normalize.css',
 			'src/_attachments/css/main.css',
 			'src/_attachments/css/sections.css',
 			'src/_attachments/css/navigation.css',

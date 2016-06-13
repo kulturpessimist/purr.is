@@ -17,10 +17,12 @@
     "tests"
   ],
   "dependencies": {
-    "riot": "^2.3.18",
+    "riot": "^2.4.1",
     "fetch": "^0.11.0",
-    "milligram": "^1.1.0",
+    "es6-promise": "^3.2.2",
     "scrollsnap-polyfill": "ckrack/scrollsnap-polyfill#^0.1.0",
-    "seenjs": "http://seenjs.io/dist/latest/seen.js"
+    "seenjs": "http://seenjs.io/dist/latest/seen.js",
+    "normalize-css": "^4.1.1",
+    "zenscroll": "^3.1.0"
   }
 }

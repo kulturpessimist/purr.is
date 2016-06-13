@@ -10,7 +10,7 @@ PURR = {
 		'blue': 	'#039BE5',
 		'red': 		'#FC4058',
 		'lilac': 	'#6653FF',
-		'paper': 	'#F4F4F0'
+		'paper': 	'#FDF3E2'
 	},
 	supportedLanguages: ['de', 'en'],
 	language: String( (window.navigator.userLanguage || window.navigator.language).split('-')[0] ).toLowerCase(),

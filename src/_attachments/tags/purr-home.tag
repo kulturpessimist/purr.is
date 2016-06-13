@@ -1,24 +1,6 @@
 <purr-home>
 	
 	<style>
-		#color {
-			background-color: rgba(80, 227, 194, 1);
-			/*background-blend-mode: multiply;*/
-			mix-blend-mode: multiply;
-			z-index: 20;
-			background: linear-gradient(23deg, #50e3c2, #fc4058, #f4f4f0, #6653ff, #50e3c2, #50e3c2);
-			background-size: 1200% 1200%;
-			animation: ColorCycle 59s ease infinite;
-		
-			display: none;
-		}
-		
-		@keyframes ColorCycle {
-		  	0% { background-position: 0% 79% }
-		  	50% { background-position: 100% 22% }
-		  	100% { background-position: 0% 79% }
-		}
-		
 		#fps{
 			color: #0f0;
 			z-index: 99999999;
@@ -42,10 +24,6 @@
 	
 	<section id="home">
 		<canvas id="seen-canvas"></canvas>
-		<!--
-			<svg id="seen-canvas"></svg>
-			<div id="color"></div>
-		-->
 		<div id="mask"></div>
 		<div id="fps" class="{ show: opts.fps }"></div>
 	</section>
@@ -105,13 +83,18 @@
 		}.bind(this)
 
 		this.setupAnimation = function(){
-			var context, equilateralAltitude, height, noiser, patch_height, patch_width, scene, shape, triangleScale, width;
+			var context, equilateralAltitude, height, noiser, patch_height, patch_width, scene, shape, triangleScale, width, scale;
 			if( this.hasOwnProperty('animator') ){
 				this.animator.stop();
 			}
-				
-			width = window.innerWidth / 2;
-			height = window.innerHeight / 2;
+
+			if( window.innerHeight > window.innerWidth ){
+				scale = 1;
+			}else{
+				scale = 2;
+			}
+			width = window.innerWidth / scale;
+			height = window.innerHeight / scale;
 			document.getElementById('seen-canvas').width = width;
 			document.getElementById('seen-canvas').height = height;
 		
