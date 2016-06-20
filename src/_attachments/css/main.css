@@ -66,6 +66,9 @@ h1{
 	margin-bottom: 0.5em;
 	line-height: 1.0em;
 }
+h1 small{
+	font-size: 0.7em;
+}
 h2{
 	font-family: 'MairyExtBd';
 	font-style: italic;
@@ -134,6 +137,10 @@ header purr-logo svg g{
 .section--manifest header purr-logo svg g{
 	stroke: var( --purr-lilac );
 	stroke: var( --purr-blue )
+}
+.section--team header purr-logo svg g{
+	stroke: var( --purr-lilac );
+	fill: var( --purr-paper );
 }
 .section--contact header purr-logo svg g{
 	stroke: var( --purr-gray );

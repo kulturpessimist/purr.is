@@ -168,6 +168,39 @@ article{
 }
 
 
+section#team{
+	background-color: var( --purr-gray );
+	width: 100vw;
+	height: 100vh;
+
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+
+	color: var( --purr-white );
+
+	overflow: hidden;
+}
+section#team p{
+	font-size: 0.6em;
+	line-height: 1.1em;
+	justify-content: center;
+}
+section#team h1{
+	font-size: 0.9em;
+	line-height: 0.8em;
+	justify-content: center;
+}
+section#team #container div:first-child p,
+section#team #container div:first-child h1{
+	color: var( --purr-paper);
+}
+section#team #container div:last-child p,
+section#team #container div:last-child h1{
+	color: var( --purr-lilac);
+}
+
+
 
 section#imprint{
 	background-color: var( --purr-lilac );

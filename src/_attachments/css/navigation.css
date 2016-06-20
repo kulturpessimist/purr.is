@@ -38,10 +38,16 @@ body.section--manifest footer .next svg path{
 	stroke: var(--purr-blue);
 }
 body.section--contact footer .next svg path{
-	stroke: #4a4a4a;
+	stroke: var( --purr-gray );
 }
 body.section--manifest footer i{
 	color: var( --purr-blue );
+}
+body.section--team footer .next svg path{
+	stroke: var( --purr-lilac );
+}
+body.section--team footer i{
+	color: var( --purr-lilac );
 }
 body.section--contact footer i{
 	color: var( --purr-gray );
