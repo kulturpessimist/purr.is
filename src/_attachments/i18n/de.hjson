@@ -95,6 +95,17 @@
 			}]
 		},
 		
+		team:{
+			toby: {
+				title: CEO / Backend / Hardware
+				bio: Fanny pack meh mumblecore, bushwick sriracha disrupt shoreditch next level cray squid keffiyeh +1 artisan YOLO. Hoodie blog brooklyn typewriter tonx dreamcatcher. Hoodie blog brooklyn typewriter tonx dreamcatcher.
+			}
+			alex: {
+				title: CEO / Frontend / Design
+				bio: Nach Abenteuern als Entwickler in der Werbe- und IoT Industrie und als Co-Founder einer Nachhaltigkeitsagentur war es an der Zeit meine 15 Jahre Erfahrung in einem komplett neuen Bereich einzubringen.
+			}
+		},
+
 		contact:{
 			headline: Sag Hallo zu PURR!
 			paragraphs:[
