@@ -5,13 +5,13 @@ module.exports = {
 		},
 		src: [
 			// Polyfills
-			'src/_attachments/bower_components/es6-promise/es6-promise.js',
-			'src/_attachments/bower_components/fetch/fetch.js',
-			'src/_attachments/bower_components/scrollsnap-polyfill/dist/scrollsnap-polyfill.bundled.js',
+			'node_modules/es6-promise/dist/es6-promise.js',
+			'node_modules/fetch-ponyfill/build/fetch-browser.js',
+			'node_modules/scrollsnap-polyfill/dist/scrollsnap-polyfill.bundled.js',
 			// Frameworks
-			'src/_attachments/bower_components/zenscroll/zenscroll.js',
-			'src/_attachments/bower_components/seenjs/index.js',
-			'src/_attachments/bower_components/riot/riot.js',
+			'node_modules/zenscroll/zenscroll.js',
+			'node_modules/seen-js/dist/latest/seen.js',
+			'node_modules/riot/riot.js',
 			// own logic...
 			'src/_attachments/resources/tags.js',
 			'src/_attachments/js/main.js'
@@ -23,7 +23,7 @@ module.exports = {
 			separator: '',
 		},
 		src: [
-			'src/_attachments/bower_components/normalize-css/normalize.css',
+			'node_modules/normalize.css/normalize.css',
 			'src/_attachments/css/main.css',
 			'src/_attachments/css/sections.css',
 			'src/_attachments/css/navigation.css',
