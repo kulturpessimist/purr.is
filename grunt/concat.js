@@ -6,7 +6,8 @@ module.exports = {
 		src: [
 			// Polyfills
 			'node_modules/es6-promise/dist/es6-promise.js',
-			'node_modules/fetch-ponyfill/build/fetch-browser.js',
+			//'node_modules/fetch-ponyfill/build/fetch-browser.js',
+			'node_modules/whatwg-fetch/fetch.js',
 			'node_modules/scrollsnap-polyfill/dist/scrollsnap-polyfill.bundled.js',
 			// Frameworks
 			'node_modules/zenscroll/zenscroll.js',

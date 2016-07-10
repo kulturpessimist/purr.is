@@ -23,13 +23,13 @@
 				content: '''
 					Software ist keine Blackbox. Wir sind es auch nicht.
 					Unsere Anwendungen sind transparent und nachvollziehbar. Genauso wie wir.
-					Dark Patterns und Featuritis verschleiern echten Fortschritt und messbare Ziele.
+					Dark Patterns und Featuritis verschleiern echten <span class="highlight">Fortschritt</span> und messbare Ziele.
 					Transparente Programme und Unternehmen führen zu einem nachvollziehbaren Handeln. Das hilft uns allen.
 				'''
 			}, {
 				headline: No Bullshit (except if you want it)
 				content: '''
-					Hyperlocal B2B2C block chain cloud appliances as a service? Wir arbeiten an echten Lösungen,
+					Hyperlocal B2B2C block chain cloud appliances as a service? Wir arbeiten an <span class="highlight">echten Lösungen</span>,
 					nicht nur an hochtrabenden Floskeln. Uns geht es um aufrichtige Projekte, nicht um halbe Sachen,
 					denn wir begegnen uns ehrlich und auf Augenhöhe. Wenn das geklärt ist,
 					ist immer noch Zeit genug fancy zu sein. <i>😉</i>
@@ -39,23 +39,23 @@
 				content: '''
 					Nachhaltigkeit ist die Basis aller guten Lösungen.
 					Kein professionelles System kann auf Hacks aufbauen. Das Aufstauen von zu vielen
-					Verbindlichkeiten bringt jedes System aus dem Gleichgewicht.
+					Verbindlichkeiten bringt jedes System aus dem <span class="highlight">Gleichgewicht</span>.
 					Kein Bestandteil eines Systems existiert als Selbstzweck. Daten, Programme, Unternehmen –
 					selbst Ideen – schaffen Verbindlichkeiten und bedürfen nachhaltiger Konzepte
 					für ihre eigene, begründete Existenz.
 				'''
 			}, {
-				headline: Constrains are good
+				headline: Constraints are good
 				content: '''
 					Limitierungen gehören zu unser aller Alltag. Sie können von Vorteil sein,
-					denn sie treiben uns zu Kreativität und Pragmatismus. Gute Programme arbeiten mit diesen Zwängen
+					denn sie treiben uns zu <span class="highlight">Kreativität</span> und Pragmatismus. Gute Programme arbeiten mit diesen Zwängen
 					und nicht gegen sie. Sie erweitern die Grenzen beständig und orientieren sich an ihren Anforderungen.
 				'''
 			}, {
 				headline: Do it right, do it once
 				content: '''
 					Software lebt und entwickelt sich weiter. Gute Software ist dann kein Selbstzweck,
-					wenn sie  Probleme löst und Mehrwerte schafft. Selbst ein „minimum viable product“
+					wenn sie  Probleme löst und <span class="highlight">Mehrwerte</span> schafft. Selbst ein „minimum viable product“
 					ist in erster Linie „viable“, nach Innen und nach Außen.
 					Eine Anwendung muss von Beginn an diesen Ansprüchen genügen und ein Fundament bieten,
 					auf dem man Aufbauen kann.
@@ -64,7 +64,7 @@
 				headline: Simple not easy
 				content: '''
 					Oft wird einfach („easy“) mit unkompliziert („simple“) verwechselt.
-					In Wirklichkeit sind gerade die unkomplizierten Lösungen nicht die einfachen.
+					In Wirklichkeit sind gerade die <span class="highlight">unkomplizierten Lösungen</span> nicht die einfachen.
 					Wir sind der Überzeugung nicht den einfachen Weg zu gehen, um dafür elegante,
 					unkomplizierte Lösungen herzustellen. Gutes Design und gute Architektur führen zu guten Ergebnissen.
 				'''
@@ -72,7 +72,7 @@
 				headline: Ethical Design & Technology
 				content: '''
 					Wir erwarten von Technologie, dass Sie sich am Menschen orientiert und der Gesellschaft dient.
-					Magische, funktionale und nachhaltige Lösungen, die den Menschen in den Mittelpunkt stellen, sind unser Ziel.
+					Magische, funktionale und nachhaltige Lösungen, die den Menschen in den <span class="highlight">Mittelpunkt</span> stellen, sind unser Ziel.
 					Die besten Lösungen sind stets transparent, intuitiv und stärken Ihre Anwender.
 					<a href="https://ind.ie/ethical-design/" target="_blank"><i>▲❤</i> We practice Ethical Design.</a>
 				'''
@@ -80,7 +80,7 @@
 				headline: We all are people
 				content: '''
 					Wir entwickeln Lösungen für Menschen. Bewusst stellen wir uns gegen den Dysphemismus des „Nutzers“.
-					Anwendungen müssen die Menschen dort erreichen wo sie sind.
+					Anwendungen müssen die <span class="highlight">Menschen</span> dort erreichen wo sie sind.
 					Schlechte Anwendungen sind eitel und verlangen viel Zeit und Ressourcen.
 					Gute Anwendungen sind simpel, effizient und selbsterklärend.
 					Wir alle sind Menschen und wir respektieren das.
@@ -90,7 +90,7 @@
 				content: '''
 					Wir wollen weiter gehen. Es entstehen jeden Tag neue Technologien und Konzepte,
 					Moden und Paradigmen. Nicht jede Strömung setzt sich durch und nicht jede Idee bewährt sich.
-					Der Status Quo ist niemals unser Dogma. Kreativität und Mut bewähren sich auch gegen kurzzeitige Strömungen.
+					Der Status Quo ist niemals unser Dogma. Kreativität und <span class="highlight">Mut</span> bewähren sich auch gegen kurzzeitige Strömungen.
 				'''
 			}]
 		},
@@ -98,11 +98,32 @@
 		team:{
 			toby: {
 				title: CEO / Backend / Hardware
-				bio: Fanny pack meh mumblecore, bushwick sriracha disrupt shoreditch next level cray squid keffiyeh +1 artisan YOLO. Hoodie blog brooklyn typewriter tonx dreamcatcher. Hoodie blog brooklyn typewriter tonx dreamcatcher.
+				buzzwords: [
+					Containerization
+					Automation
+					Databases
+					Embeded Systems
+					Nodejs
+					Webscale infrastructure management
+					Distributed Hashtables
+					Server Side Happiness Operator
+					Executive Hashtag Generator
+				]
+				bio: arbeitet nach seinem Studium in München und Graz, als Elektroingenieur und Entwickler bei Infenion und Intel sowie als Co-Founder eines Startups im Bereich mobile Apps.
 			}
 			alex: {
 				title: CEO / Frontend / Design
-				bio: Nach Abenteuern als Entwickler in der Werbe- und IoT Industrie und als Co-Founder einer Nachhaltigkeitsagentur war es an der Zeit meine 15 Jahre Erfahrung in einem komplett neuen Bereich einzubringen.
+				buzzwords: [
+					MVC Frameworks
+					Offline-First
+					Mobile Apps
+					Webapps
+					HTML, CSS, JavaScript
+					Framework Agnostiker
+					CouchDB Apologet
+					Browser Stack Guerillero 
+				]
+				bio: war bereits als Entwickler und Designer in der Werbe- und IoT Industrie tätig. Ebenso war er Co-Founder einer Nachhaltigkeitsagentur.
 			}
 		},
 

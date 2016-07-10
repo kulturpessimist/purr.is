@@ -34,9 +34,6 @@
             justify-content: flex-end;
             flex-direction: column;
 
-            /*height: 300px;
-            
-            */
             background-repeat: no-repeat;
             background-position: left bottom;
             background-size: contain;
@@ -49,8 +46,6 @@
             transform: rotate(-45deg);
             bottom: -13px;
             left: -0px; 
-
-            border: 1px solid red;
         }
         #team #container div:last-child{
             position: relative; 
@@ -58,8 +53,6 @@
             transform: rotate(135deg);
             bottom: 13px;
             left: 0px;
-
-            border: 1px solid red;
         }
 
         #team #container div h1,
@@ -71,7 +64,7 @@
         #team #container div p{
             height: 7em;
             margin-left: 50px;
-            width: 100%;
+            width: 80%;
             overflow: hidden;
         }
 
@@ -91,14 +84,14 @@
                 left: 50vw;
             }
             #team #container div:last-child{
-                bottom: -160px;
+                bottom: -155px;
                 left: -50vw;
             }
             #team #container div h1,
             #team #container div p,
             #team #container div h1,
             #team #container div p{
-                position: relative; left: 30%; bottom: 20px;
+                position: relative; left: 35%; bottom: 20px;
             }
             #team #container div p{
                 margin-left: 40px;

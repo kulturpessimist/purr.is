@@ -46,8 +46,14 @@ body.section--manifest footer i{
 body.section--team footer .next svg path{
 	stroke: var( --purr-lilac );
 }
+body.section--team.rotated footer .next svg path{
+	stroke: var( --purr-paper );
+}
 body.section--team footer i{
 	color: var( --purr-lilac );
+}
+body.section--team.rotated footer i{
+	color: var( --purr-paper );
 }
 body.section--contact footer i{
 	color: var( --purr-gray );

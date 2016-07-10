@@ -152,9 +152,15 @@ section#manifest #chapter1 i{
 	top:5px;
 }
 
+section#manifest .highlight{
+	background-color: var( --purr-blue );
+  	color: var( --purr-white );
+	padding: 4px; padding-bottom: 0px;
+}
+
 .label.manifest:after{
   	color: var( --purr-white );
-	background-color: var( --purr-blue );;
+	background-color: var( --purr-blue );
 }
 
 article{
