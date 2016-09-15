@@ -2,37 +2,26 @@
  * Sections
  * */
 section#home{
-	display: block;
+	/*display: block;*/
 	width: 100vw; height: 100vh;
-}
-section#home #seen-canvas{
-	width: 100vw;
-	height: 50vh;
-  
-	position: absolute;
-	top: 25vh;
-  	left: 0vw;
-	z-index: -999;
+	background-color: var( --purr-paper );
 }
 
-section#home #mask,
-section#home #color {
-	width: 100vw;
-	height: 100vh;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-}
+section#home h1{
+	color: var(--purr-brown);
+	font-size: 1.6em;
+	line-height: 1.1em;
+	letter-spacing: 1px;
 
-section#home #mask {
-	background-image: url('../assets/images/PURR-mask-line.svg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: 50%;
-	z-index: 21;
-	display: block;
-}
-		
+	margin-right: 10%;
+}		
+section#home h2{
+	color: var(--purr-orange);
+	font-variant: normal;
+	text-align: right;
+
+	margin-right: 10%;
+}		
 
 
 
@@ -128,6 +117,7 @@ section#manifest h1{
 section#manifest h2{
 	width: 80%;
 	font-family: 'Fira Sans';
+	
 	font-weight: 800;
 	font-size: 1.2em;
 	line-height: 1.3em;
@@ -266,25 +256,25 @@ section div div{
 
 /* Larger than mobile screen */
 @media (min-width: 40.0rem) {
-	section#home #seen-canvas{
+	/*section#home #seen-canvas{
 		width: 50vw;
 		height: 50vh;
 	
 		position: absolute;
 		top: 25vh;
 		left: 25vw;
-	}
+	}*/
 }
 /* Larger than tablet screen */
 @media (min-width: 80.0rem) {
-	section#home #seen-canvas{
+	/*section#home #seen-canvas{
 		width: 50vw;
 		height: 50vh;
 	
 		position: absolute;
 		top: 25vh;
 		left: 25vw;
-	}
+	}*/
 }
 /* Larger than desktop screen */
 @media (min-width: 120.0rem) {

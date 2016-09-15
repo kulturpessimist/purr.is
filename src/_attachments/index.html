@@ -52,6 +52,7 @@
 	<link rel="alternate" 			hreflang="de" href="https://www.purr.is/" />
 	<link rel="alternate" 			hreflang="en" href="https://www.purr.is/english" />
 	<style>
+		#ghostery{display: none !important;}
 		.loading{ overflow: hidden; }
 		body.loading > div{
 			width: 100vw; height: 100vh; position: absolute; top:0; left:0;
@@ -100,7 +101,7 @@
 
 <!-- contents -->
 
-	<purr-home></purr-home>
+	<purr-cat></purr-cat>
 
 	<purr-about></purr-about>
 
@@ -136,7 +137,7 @@
 		  			break;
 		    	case "complete":
 		  			console.timeEnd('boot');
-		  			setTimeout(function(){
+					setTimeout(function(){
 		  				var loader = document.querySelector('body > div')
 		  				loader.style.opacity = 0;
 		  				setTimeout(function(){

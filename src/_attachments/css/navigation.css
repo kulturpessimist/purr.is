@@ -34,6 +34,12 @@ footer .next svg path{
 	transition: stroke 1s, stroke-width 1s, fill 1s;
 }
 
+body.section--home footer .next svg path{
+	stroke: var(--purr-brown);
+}
+body.section--home footer i{
+	color: var( --purr-brown );
+}
 body.section--manifest footer .next svg path{
 	stroke: var(--purr-blue);
 }

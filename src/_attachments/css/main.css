@@ -9,6 +9,9 @@
 :root {
 	--purr-white: #EEEEEE;
 	--purr-gray: #4A4A4A;
+
+	--purr-orange: #FE8700;
+	--purr-brown: #734A13;
 	
 	--purr-turquoise: #50E3C2;
 	--purr-blue: #039BE5;
@@ -126,8 +129,9 @@ header purr-logo svg g{
 }
 
 .section--home header purr-logo svg g{
-	stroke: var( --purr-gray );
-	stroke-width:0;
+	stroke: var( --purr-brown );
+	fill: var( --purr-orange );
+	stroke-width:4;
 }
 .section--about header purr-logo svg g{
 	stroke: var( --purr-white );
@@ -135,7 +139,6 @@ header purr-logo svg g{
 	stroke-width:0;
 }
 .section--manifest header purr-logo svg g{
-	stroke: var( --purr-lilac );
 	stroke: var( --purr-blue )
 }
 .section--team header purr-logo svg g{

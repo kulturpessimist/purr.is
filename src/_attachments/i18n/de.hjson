@@ -1,6 +1,22 @@
 {
 		meta: Hi, wir sind PURR. Wir sind ein Team von Entwicklern und Unternehmern, spezialisiert auf web application development, digital product creation und technology consulting aus München.
 		
+		home: {
+			timeline: [
+				5, 10, 3
+			],
+			babble: [
+				Hyperlocal  block chain cloud app-liances as a service? 
+				Distributed high availability backend archi-tectures?
+				Bleeding-edge offline first syncing end user platforms?
+			],
+			punchline: [
+				Did that before <br/>it was cool…
+				So, what <br/>else is new…
+				Been there, <br/>done that…
+			]
+		},
+
 		about:{
 			headline: Hi, wir sind PURR.
 			paragraphs:[
@@ -102,6 +118,7 @@
 					Containerization
 					Automation
 					Databases
+					Custom tailored hardware software solutions
 					Embeded Systems
 					Nodejs
 					Webscale infrastructure management

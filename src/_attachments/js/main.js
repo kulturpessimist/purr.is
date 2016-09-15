@@ -14,6 +14,9 @@ PURR = {
 	},
 	supportedLanguages: ['de', 'en'],
 	language: String( (window.navigator.userLanguage || window.navigator.language).split('-')[0] ).toLowerCase(),
+	random: function(collection){
+		return collection[Math.floor(Math.random()*collection.length)];
+	},
 	store: riot.observable(),
 	_debounce: function(func, wait, immediate){
 		var timeout;
