@@ -10,8 +10,7 @@ module.exports = function (grunt) {
 		 	"tags/",
 		 	"i18n/",
 		 	"assets/PURR-ink.min.mp4",
-			"assets/fonts/YoungSerif/fontface.css",
-			"assets/fonts/YoungSerif/YoungSerif-Regular.woff",
+			"assets/fonts/YoungSerif/",
 		 	"resources/tags.js",
 		 	"resources/PURR.css",
 		 	"resources/PURR.js"

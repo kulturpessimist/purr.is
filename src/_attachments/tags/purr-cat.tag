@@ -5,27 +5,39 @@
             width: 100vw;
             height: 100vh;
         	display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
 
-            transition: all 5s linear;
+            transition: all 3s ease-out;
         }
         #home .scene div{
-            width: 50vw;
-        }
-        #home h1{
-            font-family: 'youngserifregular';
-            font-style: normal;
-
-            font-family: 'Fira Sans';
-        	font-weight: 800;
+            width: 90vw;
+            height: 50vh;
         }
 
+        #home .scene div svg{
+            width: 90%;
+            height: 90%;
+            margin-top: 20%;
+        }
+
+        
         #Glasses{
             transform: translate(105.565530px, -161.657092px);
-            transition: all 3s linear;
+            opacity: 0;
+            transition: all 3s ease-out;
         }
 
+        #home h1{
+            font-family: 'Fira Sans';
+        	font-weight: 800;
+
+            margin-top:0%;
+
+            opacity: 0;
+            transition: all 3s ease-out;
+        }
         #home h2{
             font-family: "MairyLight";
         	font-style: italic;
@@ -33,23 +45,54 @@
    	        letter-spacing: 0.01em;
 
             opacity: 0;
-            transition: all 1s ease-in;
+            transition: all 1s ease-out;
         }
         /*
             timeline...
         */
-        #home.step1 .scene{
-            margin-left: 25vw;
-        }
-        #home.step2 .scene{
-            margin-left: 0vw;
+       #home.step2 h1, #home.step3 h1, #home.step4 h1{
+            opacity: 1;
         }
         #home.step3 #Glasses, #home.step4 #Glasses{
+            opacity: 1;
             transform: translate(105.565530px, 161.657092px);
         }
         #home.step4 h2{
             opacity: 1;
         }
+
+        /*
+        * media queries ...
+        **/
+        /* Larger than mobile screen */
+        @media (min-width: 40.0rem) {
+            #home .scene{
+                flex-direction: row;
+            }
+            #home .scene div{
+                width: 50vw;
+                height: 100vh;
+            }
+            #home .scene div svg{
+                width: 100%; height: 100%;
+                margin-top: 0;
+            }
+            #home h1{
+                margin-top:25%;
+            }
+
+            #home.step1 .scene{
+                margin-left: 25vw;
+            }
+            #home.step2 .scene{
+                margin-left: 0vw;
+            }
+
+        }
+        /* Larger than tablet screen */
+        @media (min-width: 80.0rem) {}
+        /* Larger than desktop screen */
+        @media (min-width: 120.0rem) {}
     </style>
 
 	<section id="home" class="step1">
