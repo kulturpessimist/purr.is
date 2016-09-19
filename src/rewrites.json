@@ -12,6 +12,10 @@
 		"to":		"index.html"
 	},
 	{
+		"from":		"social",
+		"to":		"index.html"
+	},
+	{
 		"from":		"english",
 		"to":		"index.html"
 	},

@@ -28,7 +28,7 @@ section#home h2{
 
 
 section#about{
-	background-color: var( --purr-red );
+	background-color: var( --purr-turquoise );
 	width: 100vw;
 	height: 100vh;
 
@@ -36,7 +36,7 @@ section#about{
  	align-items: center;
  	justify-content: center;
 
-	color: var( --purr-white );
+	color: var( --purr-gray );
 }
 section#about p,
 section#about h1{
@@ -61,7 +61,7 @@ section#about a:active{
 
 
 section#contact{
-	background-color: var( --purr-turquoise );
+	background-color: var( --purr-red );
 	width: 100vw;
 	height: 100vh;
 
@@ -70,7 +70,7 @@ section#contact{
  	justify-content: center;
 	flex-direction: column;
 	
-	color: var( --purr-gray );
+	color: var( --purr-white );
 }
 section#contact p,
 section#contact h1,
@@ -84,7 +84,7 @@ section#contact h2{
 section#contact a,
 section#contact a:link,
 section#contact a:visited{
-	color: var(--purr-turquoise-dark);
+	color: var(--purr-red-light);
 	text-decoration: none;
 }
 section#contact a:hover,

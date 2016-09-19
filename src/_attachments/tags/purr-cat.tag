@@ -9,7 +9,7 @@
             align-items: center;
             justify-content: center;
 
-            transition: all 3s ease-out;
+            transition: all 3s ease;
         }
         #home .scene div{
             width: 90vw;
@@ -26,7 +26,7 @@
         #Glasses{
             transform: translate(105.565530px, -161.657092px);
             opacity: 0;
-            transition: all 3s ease-out;
+            transition: all 3s ease;
         }
 
         #home h1{
@@ -36,7 +36,7 @@
             margin-top:0%;
 
             opacity: 0;
-            transition: all 3s ease-out;
+            transition: all 3s ease;
         }
         #home h2{
             font-family: "MairyLight";
@@ -45,7 +45,7 @@
    	        letter-spacing: 0.01em;
 
             opacity: 0;
-            transition: all 1s ease-out;
+            transition: all 1s ease;
         }
         /*
             timeline...
@@ -57,7 +57,7 @@
             opacity: 1;
             transform: translate(105.565530px, 161.657092px);
         }
-        #home.step4 h2{
+        #home.step3 h2{
             opacity: 1;
         }
 
@@ -151,11 +151,11 @@
 
             setTimeout(function(){
                 document.getElementById('home').className = "step3";
-                
+                /*
                 setTimeout(function(){
                     document.getElementById('home').className = "step4";
                 }, PURR.i18n.home.timeline[2]*1000);
-            
+                */
             }, PURR.i18n.home.timeline[1]*1000);
 
         }, PURR.i18n.home.timeline[0]*1000);

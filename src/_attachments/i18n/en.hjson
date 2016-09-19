@@ -1,6 +1,21 @@
 {
 		meta: Hi, we are PURR. We are a team of developers specialized in web application development, digital product creation and technology consulting from Munich, Germany.
 
+		home: {
+			timeline: [
+				5, 10, 3
+			],
+			babble: [
+				Hyperlocal  block chain cloud app-liances as a service? 
+				Distributed high availability backend archi-tectures?
+				Bleeding-edge offline first syncing end user platforms?
+			],
+			punchline: [
+				Did that before <br/>it was cool…
+				Been there, <br/>done that…
+			]
+		},
+
 		about:{
 			headline: Hi, we are PURR.
 			paragraphs:[

@@ -40,12 +40,24 @@ body.section--home footer .next svg path{
 body.section--home footer i{
 	color: var( --purr-brown );
 }
+
+body.section--about footer .next svg path{
+	stroke: var(--purr-gray);
+}
+body.section--about footer i{
+	color: var( --purr-gray );
+}
+
 body.section--manifest footer .next svg path{
 	stroke: var(--purr-blue);
 }
 body.section--contact footer .next svg path{
-	stroke: var( --purr-gray );
+	stroke: var( --purr-white );
 }
+body.section--contact footer i{
+	color: var( --purr-white );
+}
+
 body.section--manifest footer i{
 	color: var( --purr-blue );
 }
@@ -61,9 +73,7 @@ body.section--team footer i{
 body.section--team.rotated footer i{
 	color: var( --purr-paper );
 }
-body.section--contact footer i{
-	color: var( --purr-gray );
-}
+
 
 
 /* Larger than mobile screen */

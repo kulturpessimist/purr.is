@@ -23,6 +23,8 @@
 	--purr-red-dark: #962635;
 	--purr-lilac-dark: #33297F;
 
+	--purr-red-light: color( var(--purr-red) whiteness(80%) );
+
 	--purr-paper: #FDF3E2;
 }
 /*
@@ -131,11 +133,11 @@ header purr-logo svg g{
 .section--home header purr-logo svg g{
 	stroke: var( --purr-brown );
 	fill: var( --purr-orange );
-	stroke-width:4;
+	stroke-width:10;
 }
 .section--about header purr-logo svg g{
-	stroke: var( --purr-white );
-	fill: var( --purr-white );
+	stroke: var( --purr-gray );
+	fill: var( --purr-gray );
 	stroke-width:0;
 }
 .section--manifest header purr-logo svg g{
@@ -144,10 +146,16 @@ header purr-logo svg g{
 .section--team header purr-logo svg g{
 	stroke: var( --purr-lilac );
 	fill: var( --purr-paper );
+	stroke-width:0;
+}
+.section--team.rotated header purr-logo svg g{
+	stroke: var( --purr-lilac );
+	fill: var( --purr-paper );
+	stroke-width:10;
 }
 .section--contact header purr-logo svg g{
-	stroke: var( --purr-gray );
-	fill: var( --purr-gray );
+	stroke: var( --purr-white );
+	fill: var( --purr-white );
 	stroke-width:0;
 }
 .section--imprint header purr-logo svg g{
