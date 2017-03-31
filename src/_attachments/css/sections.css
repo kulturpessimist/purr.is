@@ -1,19 +1,39 @@
 /*
  * Sections
  * */
+
+ /* Home */
 section#home{
 	/*display: block;*/
 	width: 100vw; height: 100vh;
-	background-color: var( --purr-paper );
+	background-color: #333333;
+	text-align: center;
+}
+
+section#home div{
+	height: 50vh;
+	padding-top: 25vh;
+	color: #eee;
+}
+section#home svg{
+	width: 40vw;
+}
+section#home svg g{
+/*
+	stroke: url(#purr-gardient);
+	fill: transparent;
+*/
 }
 
 section#home h1{
-	color: var(--purr-brown);
-	font-size: 1.6em;
-	line-height: 1.1em;
-	letter-spacing: 1px;
-
-	margin-right: 10%;
+	color: var(--purr-white);
+	font-family: "MairyLight";
+	font-style: italic;
+   	font-weight: 300;
+   	letter-spacing: 0.01em;
+	font-size: 0.8em;
+	line-height: 0.8em;
+	margin-top: -3vh;
 }		
 section#home h2{
 	color: var(--purr-orange);
@@ -23,12 +43,17 @@ section#home h2{
 	margin-right: 10%;
 }		
 
-
-
-
-
+/* About */
 section#about{
 	background-color: var( --purr-turquoise );
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#002639+60,039be5+90 */
+	background: #002639; /* Old browsers */
+	background: -moz-linear-gradient(top, #002639 66%, #039be5 99%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #002639 66%,#039be5 99%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #002639 66%,#039be5 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002639', endColorstr='#039be5',GradientType=0 ); /* IE6-9 */
+
+
 	width: 100vw;
 	height: 100vh;
 
@@ -36,7 +61,7 @@ section#about{
  	align-items: center;
  	justify-content: center;
 
-	color: var( --purr-gray );
+	color: var( --purr-white );
 }
 section#about p,
 section#about h1{
@@ -59,7 +84,90 @@ section#about a:active{
 	background-color: var( --purr-red-dark );;
 }
 
+/* Cloud */
+section#cloud{
+	width: 100vw;
+	height: 100vh;
 
+ 	display: flex;
+ 	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	background-color: var( --purr-blue );
+	color: var( --purr-white );
+
+}
+section#cloud p,
+section#cloud h1{
+	width: 66%;
+	justify-content: center;
+}
+
+/* streams */
+section#streams{
+	width: 100vw;
+	height: 100vh;
+
+	background-color: var(--purr-white);
+	background-image:url('data:image/svg+xml;charset=UTF-8,<svg width="3000" height="539" viewBox="0 0 3000 539" xmlns="http://www.w3.org/2000/svg"><title>Lines</title><desc>Created with Sketch.</desc><g fill-rule="nonzero" fill="none"><path fill="#50E3C2" d="M1960.802 538.737l83.396-204.345 35.044 51.182h930.757v-40h-909.667l-65.098-95.076-92.746 227.255-152.729-104.451h-1799.759v40h1787.389z"/><path fill="#039BE5" d="M1942.328 478.307l92.642-227.67 65.328 95.719h909.702v-40h-888.574l-95.422-139.813-101.959 250.567-120.388-83.019-1813.656-.954v40l1801.181.94z"/><path fill="#6653FF" d="M1923.874 418.494l101.898-251.026 96.608 141.352h887.62v-40h-866.508l-125.75-185.454-112.163 273.848-89.075-61.59h-1826.504v40h1814.022z"/><path fill="#FE8700" d="M1905.366 358.201l112.057-274.213 126.009 185.051h866.568v-40h-845.412l-155.955-229.029-121.463 296.148-58.659-40.314h-1838.51v40h1826.09z"/></g></svg>');
+	background-image:url('data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%223000%22%20height%3D%22539%22%20viewBox%3D%220%200%203000%20539%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3ELines%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%3Cg%20fill-rule%3D%22nonzero%22%20fill%3D%22none%22%3E%3Cpath%20fill%3D%22%2350E3C2%22%20d%3D%22M1960.802%20538.737l83.396-204.345%2035.044%2051.182h930.757v-40h-909.667l-65.098-95.076-92.746%20227.255-152.729-104.451h-1799.759v40h1787.389z%22%2F%3E%3Cpath%20fill%3D%22%23039BE5%22%20d%3D%22M1942.328%20478.307l92.642-227.67%2065.328%2095.719h909.702v-40h-888.574l-95.422-139.813-101.959%20250.567-120.388-83.019-1813.656-.954v40l1801.181.94z%22%2F%3E%3Cpath%20fill%3D%22%236653FF%22%20d%3D%22M1923.874%20418.494l101.898-251.026%2096.608%20141.352h887.62v-40h-866.508l-125.75-185.454-112.163%20273.848-89.075-61.59h-1826.504v40h1814.022z%22%2F%3E%3Cpath%20fill%3D%22%23FE8700%22%20d%3D%22M1905.366%20358.201l112.057-274.213%20126.009%20185.051h866.568v-40h-845.412l-155.955-229.029-121.463%20296.148-58.659-40.314h-1838.51v40h1826.09z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');	
+	
+	background-repeat: no-repeat;
+	background-position-y: calc( 100% - 75px );
+	background-position-x: -100px;
+
+	background-size: 120%;
+
+ 	display: flex;
+ 	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	color: var( --purr-blue );
+
+}
+section#streams div,
+section#streams h1{
+	width: 70%;
+}
+section#streams div{
+	display: flex;
+	flex-direction: row;
+	font-size: 0.9em;
+}
+section#streams div p{
+	margin-right: 20px;
+	width: 80%;
+
+}
+section#streams div p span{
+	display: inline;
+	/*
+	background-color: var(--purr-white);
+	box-decoration-break: clone;
+	*/
+	--outline-width: 2px;
+	text-shadow: 
+		0 0 var(--outline-width) var(--purr-white), 0 0 var(--outline-width) var(--purr-white), 0 0 var(--outline-width) var(--purr-white),
+		0 0 var(--outline-width) var(--purr-white), 0 0 var(--outline-width) var(--purr-white), 0 0 var(--outline-width) var(--purr-white),
+		0 0 var(--outline-width) var(--purr-white), 0 0 var(--outline-width) var(--purr-white), 0 0 var(--outline-width) var(--purr-white),
+		0 0 var(--outline-width) var(--purr-white), 0 0 var(--outline-width) var(--purr-white), 0 0 var(--outline-width) var(--purr-white),
+		0 0 var(--outline-width) var(--purr-white), 0 0 var(--outline-width) var(--purr-white), 0 0 var(--outline-width) var(--purr-white),
+		0 0 var(--outline-width) var(--purr-white), 0 0 var(--outline-width) var(--purr-white), 0 0 var(--outline-width) var(--purr-white),
+		0 0 var(--outline-width) var(--purr-white), 0 0 var(--outline-width) var(--purr-white), 0 0 var(--outline-width) var(--purr-white),
+		0 0 var(--outline-width) var(--purr-white), 0 0 var(--outline-width) var(--purr-white), 0 0 var(--outline-width) var(--purr-white)
+		
+		
+		;
+	-webkit-font-smoothing: antialiased;
+
+
+}
+
+
+
+/* Contact */
 section#contact{
 	background-color: var( --purr-red );
 	width: 100vw;
@@ -194,6 +302,98 @@ section#team #container div:first-child h1{
 section#team #container div:last-child p,
 section#team #container div:last-child h1{
 	color: var( --purr-lilac);
+}
+section#team #container{
+	position: relative;
+	left: 0vw;
+	width: 100vw; height: 100vw;
+	min-width: 900px;
+	transition: transform 1s ease;
+	transform: rotateZ(0deg);
+
+	background-image: url('data:image/svg+xml,%3Csvg%20width%3D%221000%22%20height%3D%221000%22%20viewBox%3D%220%200%201000%201000%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%3E%3Ctitle%3Ebackground-halfhalf%3C/title%3E%3Cdesc%3ECreated%20with%20Sketch.%3C/desc%3E%3Cdefs%3E%3Cpath%20id%3D%22a%22%20d%3D%22M5%2028.2l5%2010h-10z%22/%3E%3Cmask%20id%3D%22b%22%20x%3D%22-4%22%20y%3D%22-4%22%20width%3D%2218%22%20height%3D%2218%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M-4%2024.2h18v18h-18z%22/%3E%3Cuse%20xlink%3Ahref%3D%22%23a%22/%3E%3C/mask%3E%3C/defs%3E%3Cg%20fill%3D%22none%22%3E%3Cpath%20fill%3D%22%23FDF3E2%22%20d%3D%22M1000%200v1000h-1000z%22/%3E%3Cpath%20fill%3D%22%236653FF%22%20d%3D%22M0%201000v-1000h1000z%22/%3E%3Cg%3E%3Cpath%20d%3D%22M502.2%20530c16.569%200%2030-13.431%2030-30%200-16.569-13.431-30-30-30-16.569%200-30%2013.431-30%2030%22%20id%3D%22Oval-1%22%20stroke%3D%22%236653FF%22%20stroke-width%3D%228%22%20stroke-linecap%3D%22round%22/%3E%3Cpath%20d%3D%22M502.2%20530c16.569%200%2030-13.431%2030-30%200-16.569-13.431-30-30-30-16.569%200-30%2013.431-30%2030%22%20stroke%3D%22%23FDF3E2%22%20stroke-width%3D%224%22%20stroke-linecap%3D%22round%22/%3E%3Cg%20id%3D%22Triangle-1%22%20transform%3D%22matrix%281%200%200%20-1%20467%20536.4%29%22%3E%3Cuse%20fill%3D%22%23FDF3E2%22%20xlink%3Ahref%3D%22%23a%22/%3E%3Cuse%20stroke%3D%22%236653FF%22%20mask%3D%22url%28%23b%29%22%20stroke-width%3D%228%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20xlink%3Ahref%3D%22%23a%22/%3E%3C/g%3E%3Cpath%20stroke%3D%22%23FDF3E2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22%23FDF3E2%22%20d%3D%22M472%20508.2l5-10h-10z%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+section#team #container div{
+	width: 450px;
+	max-width: 450px;
+	height: 300px;
+	max-height: 300px;
+	
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	background-size: contain;
+
+	cursor: pointer;
+}
+section#team #container div:first-child{
+	position: relative; 
+	background-image: url('../assets/images/toby.png'); 
+	transform: rotateZ(-45deg);
+	bottom: -13px;
+	left: -0px; 
+}
+section#team #container div:last-child{
+	position: relative; 
+	background-image: url('../assets/images/alex.png');
+	transform: rotateZ(135deg);
+	bottom: 13px;
+	left: 0px;
+}
+
+section#team #container div h1,
+section#team #container div p,
+section#team #container div h1,
+section#team #container div p{
+	position: relative; left: 40%; bottom: 40px;
+}
+section#team #container div p{
+	height: 7em;
+	margin-left: 50px;
+	width: 80%;
+	overflow: hidden;
+}
+
+
+@media only screen and (orientation: portrait){
+	section#team #container{            
+		width: 100vh; height: 100vh;
+	}
+	section#team #container div{
+		width: 100vw;
+		max-width: 100vw;
+		height: 220px;
+		max-height: 220px;
+	}
+	section#team #container div:first-child{
+		bottom: 160px;
+		left: 50vw;
+	}
+	section#team #container div:last-child{
+		bottom: -155px;
+		left: -50vw;
+	}
+	section#team #container div h1,
+	section#team #container div p,
+	section#team #container div h1,
+	section#team #container div p{
+		position: relative; left: 35%; bottom: 20px;
+	}
+	section#team #container div p{
+		margin-left: 40px;
+		width: 50%;
+	}
 }
 
 

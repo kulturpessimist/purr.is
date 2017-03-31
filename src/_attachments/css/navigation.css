@@ -35,17 +35,31 @@ footer .next svg path{
 }
 
 body.section--home footer .next svg path{
-	stroke: var(--purr-brown);
+	stroke: var(--purr-white);
 }
 body.section--home footer i{
-	color: var( --purr-brown );
+	color: var( --purr-white );
 }
 
 body.section--about footer .next svg path{
-	stroke: var(--purr-gray);
+	stroke: var(--purr-white);
 }
 body.section--about footer i{
-	color: var( --purr-gray );
+	color: var( --purr-white );
+}
+
+body.section--cloud footer .next svg path{
+	stroke: var(--purr-white);
+}
+body.section--cloud footer i{
+	color: var( --purr-white );
+}
+
+body.section--streams footer .next svg path{
+	stroke: var(--purr-blue);
+}
+body.section--streams footer i{
+	color: var( --purr-blue );
 }
 
 body.section--manifest footer .next svg path{

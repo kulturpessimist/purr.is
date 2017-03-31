@@ -10,6 +10,8 @@
             justify-content: center;
 
             transition: all 3s ease;
+
+            cursor: pointer;
         }
         #home .scene div{
             width: 90vw;
@@ -148,6 +150,11 @@
 
         setTimeout(function(){
             document.getElementById('home').className = "step2";
+
+            document.querySelector('.scene')
+                .addEventListener('click', function(){
+                    document.location.assign('#next');
+                });
 
             setTimeout(function(){
                 document.getElementById('home').className = "step3";

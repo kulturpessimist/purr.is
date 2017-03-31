@@ -1,23 +1,23 @@
 [
 	{
 		"from":		"",
-		"to":		"index.html"
+		"to":		"de.html"
 	},
 	{
 		"from":		"coming",
-		"to":		"index.html"
+		"to":		"de.html"
 	},
 	{
 		"from":		"awesome",
-		"to":		"index.html"
+		"to":		"de.html"
 	},
 	{
 		"from":		"social",
-		"to":		"index.html"
+		"to":		"de.html"
 	},
 	{
 		"from":		"english",
-		"to":		"index.html"
+		"to":		"en.html"
 	},
 
 	{

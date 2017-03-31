@@ -4,3 +4,6 @@ build
 _Material
 src/_attachments/bower_components
 src/_attachments/resources
+.DS_Store
+/src/_attachments/en.html
+/src/_attachments/de.html

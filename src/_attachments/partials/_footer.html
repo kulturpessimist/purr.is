@@ -1,0 +1,50 @@
+	<footer>
+		<a href="#next" class="next">
+			<svg width="144" height="23" viewBox="0 0 144 23" xmlns="http://www.w3.org/2000/svg">
+				<path d="M2 2l70 20 70-20" stroke-width="2" stroke="#4A4A4A" fill="none"/>
+			</svg>
+		</a>
+		<i>PURR.is/<span>#home</span></i>
+		<!--<a onclick="PURR.switchLanguage('en')">[EN]</a>-->
+	</footer>
+		
+	<script>
+		console.group('Booting');
+		console.time('loading');
+		document.onreadystatechange = function () {
+		  	switch (document.readyState) {
+		    	case "loading":
+		  			break;
+		    	case "interactive":
+					console.timeEnd('loading');
+					console.time('boot');
+		  			break;
+		    	case "complete":
+		  			console.timeEnd('boot');
+					setTimeout(function(){
+		  				var loader = document.querySelector('body > div');
+						var current = document.location.hash.split('#')[1];
+		  				loader.style.opacity = 0;
+		  				setTimeout(function(){
+		  					document.body.className=="loading"?document.body.className='section--'+current:'';
+		  					document.body.removeChild(this);
+		  				}.bind(loader), 760);
+		  			}, 1000);
+					console.groupEnd();
+		  			break;
+		  	}
+		}
+	</script>
+	<link rel="stylesheet" href="assets/fonts/fonts.css">
+	<link rel="stylesheet" href="resources/PURR.min.css">
+	<script src="resources/PURR.min.js"></script>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-39968606-2', 'auto');
+		ga('send', 'pageview');
+	</script>
+</body>
+</html>

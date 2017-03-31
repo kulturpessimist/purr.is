@@ -56,19 +56,20 @@ body{
 
 	overflow-x: hidden;
 	overflow-y: auto;
-	/*
+	
 	scroll-snap-type: mandatory;
-	scroll-snap-destination: 100% 0%;
-	scroll-behavior: smooth;
-	*/
+	/*scroll-snap-destination: 100vh 0vw;*/
+	scroll-snap-points-y: repeat(100vh);
+
+	
 }
 
 h1{
 	font-family: 'MairyExtBd';
 	font-style: italic;
 
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
 	line-height: 1.0em;
 }
 h1 small{
@@ -124,44 +125,66 @@ header{
 	height: 60px;
 	user-select: none;
 }
-header purr-logo svg g{
+header  svg g{
 	stroke: var( --purr-gray );
 	fill: rgba(254,254,254, 0);
-	transition: stroke 1s, stroke-width 1s, fill 1s;
+	opacity: 0;
+	transition: stroke 1s, stroke-width 1s, fill 1s, opacity 1s;
 }
 
-.section--home header purr-logo svg g{
-	stroke: var( --purr-brown );
+.section--home header  svg g{
+	stroke: var( --purr-white );
+	fill: var( --purr-white );
+	stroke-width:10;
+	opacity: 0;
+}
+.section--about header  svg g{
+	stroke: var( --purr-white );
+	fill: var( --purr-white );
+	stroke-width:0;
+	opacity: 1;
+}
+
+.section--cloud header  svg g{
+	stroke: var( --purr-white );
+	fill: var( --purr-white );
+	stroke-width:0;
+	opacity: 1;
+}
+.section--streams header svg g{
+	stroke: var( --purr-white );
 	fill: var( --purr-orange );
-	stroke-width:10;
-}
-.section--about header purr-logo svg g{
-	stroke: var( --purr-gray );
-	fill: var( --purr-gray );
 	stroke-width:0;
+	opacity: 1;
 }
-.section--manifest header purr-logo svg g{
-	stroke: var( --purr-blue )
+
+.section--manifest header  svg g{
+	stroke: var( --purr-blue );
+	opacity: 1;
 }
-.section--team header purr-logo svg g{
+.section--team header  svg g{
 	stroke: var( --purr-lilac );
 	fill: var( --purr-paper );
 	stroke-width:0;
+	opacity: 1;
 }
-.section--team.rotated header purr-logo svg g{
+.section--team.rotated header  svg g{
 	stroke: var( --purr-lilac );
 	fill: var( --purr-paper );
 	stroke-width:10;
+	opacity: 1;
 }
-.section--contact header purr-logo svg g{
+.section--contact header  svg g{
 	stroke: var( --purr-white );
 	fill: var( --purr-white );
 	stroke-width:0;
+	opacity: 1;
 }
-.section--imprint header purr-logo svg g{
+.section--imprint header  svg g{
 	stroke: var( --purr-white );
 	fill: var( --purr-white );
 	stroke-width:0;
+	opacity: 1;
 }
 
 /*

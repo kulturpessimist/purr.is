@@ -1,4 +1,7 @@
 {
+		code: de
+	
+		title: PURR.is
 		meta: Hi, wir sind PURR. Wir sind ein Team von Entwicklern und Unternehmern, spezialisiert auf web application development, digital product creation und technology consulting aus München.
 		
 		home: {
@@ -28,6 +31,27 @@
 			]
 		},
 		
+		cloud:{
+			headline: Cloudless IoT
+			paragraphs:[
+				'''
+					Manche Daten sind viel zu sensibel für die Cloud.
+					Wir machen IoT sicher. 
+					Dezentralisiert und Ende-zu-Ende (e2e) Verschlüsselt.
+					Individuell an Ihr Unternehmen angepasst.
+				'''
+			]
+		},
+
+		streams:{
+			headline: Streams
+			paragraphs:[
+				'''
+					Hexagon hot chicken woke, kinfolk air plant distillery tote bag leggings tofu cornhole scenester. Hexagon man braid helvetica fap ennui. Roof party health goth iPhone, succulents swag green juice affogato 90's kogi sriracha meditation selvage church-key.  
+				'''
+			]
+		},
+
 		manifest:{
 			
 			headline: Das PURR Manifest
@@ -112,6 +136,7 @@
 		
 		team:{
 			toby: {
+				name: Tobias Knothe
 				title: CEO / Backend / Hardware
 				buzzwords: [
 					Containerization
@@ -125,9 +150,10 @@
 					Server Side Happiness Operator
 					Executive Hashtag Generator
 				]
-				bio: arbeitet nach seinem Studium in München und Graz, als Elektroingenieur und Entwickler bei Infenion und Intel sowie als Co-Founder eines Startups im Bereich mobile Apps.
+				bio: arbeitete als Elektroingenieur und Entwickler bei Infineon und Intel sowie als Co-Founder eines Startups im Bereich mobile Apps.
 			}
 			alex: {
+				name: Alexander Schedler
 				title: CEO / Frontend / Design
 				buzzwords: [
 					MVC Frameworks
@@ -139,7 +165,7 @@
 					CouchDB Apologet
 					Browser Stack Guerillero 
 				]
-				bio: war bereits als Entwickler und Designer in der Werbe- und IoT Industrie tätig. Ebenso war er Co-Founder einer Nachhaltigkeitsagentur.
+				bio: war bereits als Entwickler und Designer in der Werbe- und IoT Industrie tätig und Co-Founder einer Nachhaltigkeitsagentur.
 			}
 		},
 

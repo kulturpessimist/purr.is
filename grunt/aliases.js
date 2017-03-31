@@ -7,8 +7,11 @@ module.exports = {
   	'preflight': [
 		'concat:css',
 		'postcss',
-		'riot',
+
 		'hjson',
+		'concat:html',
+		'ejs',
+
 		'concat:js',
 		'uglify'
   	],
